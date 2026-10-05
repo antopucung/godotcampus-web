@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="author" content="Godot Engine">
+		<meta name="description" content="Use the Godot Engine editor directly in your web browser, without having to install anything.">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="application-name" content="Godot">
+		<meta name="apple-mobile-web-app-title" content="Godot">
+		<meta name="theme-color" content="#202531">
+		<meta name="msapplication-navbutton-color" content="#202531">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="msapplication-starturl" content="/latest">
+		<meta property="og:site_name" content="Godot Engine Web Editor">
+		<meta property="og:url" name="twitter:url" content="https://editor.godotengine.org/releases/stable/">
+		<meta property="og:title" name="twitter:title" content="Free and open source 2D and 3D game engine">
+		<meta property="og:description" name="twitter:description" content="Use the Godot Engine editor directly in your web browser, without having to install anything.">
+		<meta property="og:image" name="twitter:image" content="https://godotengine.org/assets/share-image.webp">
+		<meta property="og:type" content="website">
+		<meta name="twitter:card" content="summary">
+		<link id="-gd-engine-icon" rel="icon" type="image/png" href="favicon.png">
+		<link rel="apple-touch-icon" type="image/png" href="favicon.png">
+		<link rel="manifest" href="manifest.json">
+		<link rel="preload" href="inter-regular.woff2" as="font" crossorigin="anonymous">
+		<link rel="preload" href="inter-bold.woff2" as="font" crossorigin="anonymous">
+		<title>GodotCampus — Godot Engine Web Editor (4.7.1.stable.official)</title>
+		<style>
+/* Use Inter in the same configuration as used in the editor (e.g. alternate lowercase `l`). */
+@font-face {
+	font-family: "Inter";
+	src: url("inter-regular.woff2");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Inter";
+	src: url("inter-bold.woff2");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+html,
+body,
+button,
+input {
+	/* Apply a modern sans-serif font stack in case the Inter font fails to load. */
+	font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+	font-size: 14px;
+	font-feature-settings: "calt" 0, "ss04" 1, "tnum" 1;
+}
+
+*:focus-visible {
+	/* More visible outline for better keyboard navigation. */
+	outline: 0.1875rem solid #538dda;
+	/* Make the outline always appear above other elements. */
+	/* Otherwise, one of its sides can be hidden by tabs in the Download and More layouts. */
+	position: relative;
+}
+
+body {
+	touch-action: none;
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+	font-size: 14px;
+	text-align: center;
+	background-color: #262626;
+	overflow: hidden;
+}
+
+h2 {
+	font-size: 21px;
+}
+
+a {
+	color: hsl(205, 100%, 75%);
+	text-decoration-color: hsla(205, 100%, 75%, 0.3);
+	text-decoration-thickness: 0.125rem;
+}
+
+a:hover {
+	filter: brightness(117.5%);
+}
+
+a:active {
+	filter: brightness(82.5%);
+}
+
+.welcome-modal {
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: hsla(0, 0%, 0%, 0.5);
+	text-align: left;
+}
+
+.welcome-modal-title {
+	text-align: center;
+}
+
+.welcome-modal-content {
+	background-color: #262626;
+	box-shadow: 0 0.25rem 0.25rem hsla(0, 0%, 0%, 0.5);
+	line-height: 1.5;
+	max-width: 38rem;
+	margin: 4rem auto 0 auto;
+	color: white;
+	border-radius: 0.5rem;
+	padding: 0.125rem 1.25rem 1.25rem 1.25rem;
+}
+
+#tabs-buttons {
+	/* Remove spacing between items. */
+	font-size: 0;
+
+	/* Match the default background color of the editor window for a seamless appearance. */
+	background-color: #141414;
+}
+
+#tab-game {
+	/* Match the default background color of the editor window for a seamless appearance. */
+	background-color: #141414;
+	/* Make the background span the entire page height. */
+	min-height: 100vh;
+}
+
+#canvas, #gameCanvas {
+	display: block;
+	margin: 0;
+	color: white;
+}
+
+/* Don't show distracting focus outlines for the main tabs' contents. */
+#tab-editor canvas:focus,
+#tab-game canvas:focus,
+#canvas:focus,
+#gameCanvas:focus {
+	outline: none;
+}
+
+.godot {
+	color: #d0d0d0;
+	background-color: #1b1b1b;
+	background-image: linear-gradient(to bottom, #403e48, #35333c);
+	border: 1px solid #484848;
+	box-shadow: 0 0 1px 1px #141414;
+}
+
+.btn {
+	appearance: none;
+	color: #d0d0d0;
+	background-color: #424242;
+	border: 1px solid #484848;
+	/* Vertically center button text. */
+	padding: 0.4375rem 0.5625rem 0.5rem;
+	margin: 0 0.5rem;
+	border-radius: 0.25rem;
+}
+
+.btn:not(:disabled):hover {
+	color: #e4e4e4;
+	background-color: #4d4d4d;
+	border-color: #535353;
+}
+
+.btn:active {
+	color: #e5e5e5;
+	background-color: #505050;
+	border-color: #565656;
+}
+
+.btn:disabled {
+	color: #7f7f7f;
+	background-color: #3a3a3a;
+	border-color: #3a3a3a;
+}
+
+.btn.tab-btn,
+.btn.close-btn {
+	/* Match tab colors from the default editor theme. */
+	background-color: transparent;
+	border-color: transparent;
+}
+
+.btn.tab-btn:not(:disabled):hover,
+.btn.close-btn:not(:disabled):hover {
+	background-color: #212121;
+	border-color: #212121;
+}
+
+.btn.tab-btn {
+	/* Round top corners only. */
+	border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.btn.next-to-close-btn {
+	/* Round top-left corner only. */
+	border-radius: 0.25rem 0 0 0;
+}
+
+.btn.close-btn {
+	/* Round top-right corner only. */
+	border-radius: 0 0.25rem 0 0;
+	margin-left: -0.75rem;
+	font-weight: 700;
+}
+
+/* Status display */
+
+/* GodotCampus: `#status` matches nothing; the element is `tab-status`. */
+#tab-status {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* don't consume click events - make children visible explicitly */
+	visibility: hidden;
+}
+
+#status-progress {
+	width: 366px;
+	height: 7px;
+	background-color: #38363A;
+	border: 1px solid #444246;
+	padding: 1px;
+	box-shadow: 0 0 2px 1px #1B1C22;
+	border-radius: 2px;
+	visibility: visible;
+}
+
+@media only screen and (orientation:portrait) {
+	#status-progress {
+		width: 61.8%;
+	}
+}
+
+#status-progress-inner {
+	height: 100%;
+	width: 0;
+	box-sizing: border-box;
+	transition: width 0.5s linear;
+	background-color: #202020;
+	border: 1px solid #222223;
+	box-shadow: 0 0 1px 1px #27282E;
+	border-radius: 3px;
+}
+
+#status-indeterminate {
+	visibility: visible;
+	position: relative;
+}
+
+#status-indeterminate > div {
+	width: 4.5px;
+	height: 0;
+	border-style: solid;
+	border-width: 9px 3px 0 3px;
+	border-color: #2b2b2b transparent transparent transparent;
+	transform-origin: center 21px;
+	position: absolute;
+}
+
+#status-indeterminate > div:nth-child(1) { transform: rotate( 22.5deg); }
+#status-indeterminate > div:nth-child(2) { transform: rotate( 67.5deg); }
+#status-indeterminate > div:nth-child(3) { transform: rotate(112.5deg); }
+#status-indeterminate > div:nth-child(4) { transform: rotate(157.5deg); }
+#status-indeterminate > div:nth-child(5) { transform: rotate(202.5deg); }
+#status-indeterminate > div:nth-child(6) { transform: rotate(247.5deg); }
+#status-indeterminate > div:nth-child(7) { transform: rotate(292.5deg); }
+#status-indeterminate > div:nth-child(8) { transform: rotate(337.5deg); }
+
+#status-notice {
+	margin: 0 100px;
+	line-height: 1.3;
+	visibility: visible;
+	padding: 4px 6px;
+}
+		
+/* --- GodotCampus loading screen ------------------------------------------ */
+#campus-loading {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 9000;
+	background-color: #101014;
+	color: #e6e6ea;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: opacity 0.35s ease;
+}
+
+#campus-loading-inner {
+	width: 30rem;
+	max-width: 84vw;
+	padding: 0 1rem;
+}
+
+#campus-mark {
+	font-size: 1.7rem;
+	font-weight: 700;
+	margin-bottom: 1.6rem;
+}
+
+#campus-mark span {
+	color: #7fa9f5;
+}
+
+#campus-bar {
+	height: 6px;
+	border-radius: 999px;
+	background-color: #26262e;
+	overflow: hidden;
+	margin-bottom: 1.3rem;
+}
+
+#campus-bar-inner {
+	height: 100%;
+	width: 0;
+	border-radius: 999px;
+	background-color: #7fa9f5;
+	transition: width 0.3s linear;
+}
+
+/* No number to show: a bar frozen at an invented percentage is a lie a
+   learner can see, and the project import genuinely reports nothing. */
+#campus-bar.indeterminate > #campus-bar-inner {
+	width: 35%;
+	transition: none;
+	animation: campus-slide 1.4s ease-in-out infinite;
+}
+
+@keyframes campus-slide {
+	from { margin-left: -35%; }
+	to { margin-left: 100%; }
+}
+
+#campus-status {
+	margin: 0 0 0.8rem;
+	font-size: 1rem;
+	min-height: 1.4em;
+}
+
+#campus-note,
+#campus-slow {
+	margin: 0 0 0.4rem;
+	font-size: 0.82rem;
+	line-height: 1.5;
+	color: #9a9aa6;
+}
+
+#campus-escape {
+	display: none;
+	margin-top: 1.6rem;
+}
+
+#campus-escape a {
+	color: #9a9aa6;
+	font-size: 0.8rem;
+	cursor: pointer;
+}
+
+/* After the ceiling: the same link, no longer a footnote. */
+#campus-escape.urgent a {
+	color: #e6e6ea;
+	font-size: 0.95rem;
+	border: 1px solid #3a3a46;
+	border-radius: 999px;
+	padding: 0.5rem 1.1rem;
+	text-decoration: none;
+	display: inline-block;
+}
+
+@media (prefers-reduced-motion: reduce) {
+	#campus-bar.indeterminate > #campus-bar-inner {
+		animation: none;
+		width: 100%;
+	}
+}
+</style>
+	</head>
+	<body>
+		<div
+			id="welcome-modal"
+			class="welcome-modal"
+			role="dialog"
+			aria-labelledby="welcome-modal-title"
+			aria-describedby="welcome-modal-description"
+			onclick="if (event.target === this) closeWelcomeModal(false)"
+		>
+			<div class="welcome-modal-content">
+				<h2 id="welcome-modal-title" class="welcome-modal-title">Important - Please read before continuing</h2>
+				<div id="welcome-modal-description">
+					<p>
+						The Godot Web Editor has some limitations compared to the native version.<br>
+						Its main focus is education and experimentation;
+						<strong>it is not recommended for production</strong>.
+					</p>
+					<p>
+						For a more optimal experience, <a
+							href="https://godotengine.org/download/"
+							target="_blank"
+							rel="noopener"
+						>download</a> the native Godot Editor.
+					</p>
+					<p>
+						Refer to the
+						<a
+							href="https://docs.godotengine.org/en/stable/tutorials/editor/using_the_web_editor.html"
+							target="_blank"
+							rel="noopener"
+						>Web editor documentation</a> for usage instructions and limitations.
+					</p>
+				</div>
+				<div id="welcome-modal-missing-description" style="display: none">
+					<p>
+						<strong>The following features required by the Godot Web Editor are missing:</strong>
+					</p>
+					<ul id="welcome-modal-missing-list">
+					</ul>
+					<p>
+						If you are self-hosting the web editor,
+						refer to
+						<a
+							href="https://docs.godotengine.org/en/stable/tutorials/export/exporting_for_web.html"
+							target="_blank"
+							rel="noopener"
+						>Exporting for the Web</a> for more information.
+					</p>
+				</div>
+				<div style="text-align: center">
+					<button id="welcome-modal-dismiss" class="btn" type="button" onclick="closeWelcomeModal(true)" style="margin-top: 1rem">
+						OK - Don't Show Again
+					</button>
+				</div>
+			</div>
+		</div>
+		<div id="campus-loading" role="status" aria-live="polite">
+			<div id="campus-loading-inner">
+				<div id="campus-mark">Godot<span>Campus</span></div>
+				<div id="campus-bar" class="indeterminate"><div id="campus-bar-inner"></div></div>
+				<p id="campus-status"></p>
+				<p id="campus-note"></p>
+				<p id="campus-slow"></p>
+				<p id="campus-escape"><a href="#" id="campus-show-anyway"></a></p>
+			</div>
+		</div>
+		<div id="tabs-buttons">
+			<button id="btn-tab-loader" class="btn tab-btn" onclick="showTab('loader')">Loader</button>
+			<button id="btn-tab-editor" class="btn tab-btn next-to-close-btn" disabled="disabled" onclick="showTab('editor')">Editor</button>
+			<button id="btn-close-editor" class="btn close-btn" disabled="disabled" onclick="closeEditor()">×</button>
+			<button id="btn-tab-game" class="btn tab-btn next-to-close-btn" disabled="disabled" onclick="showTab('game')">Game</button>
+			<button id="btn-close-game" class="btn close-btn" disabled="disabled" onclick="closeGame()">×</button>
+			<button id="btn-tab-update" class="btn tab-btn" style="display: none;">Update</button>
+		</div>
+		<div id="tabs">
+			<div id="tab-loader">
+				<div style="color: #e0e0e0;" id="persistence" hidden>
+					<br >
+					<img src="logo.svg" alt="Godot Engine logo" width="1024" height="414" style="width: auto; height: auto; max-width: min(85%, 50vh); max-height: 200px">
+					<br >
+					4.7.1.stable.official - <a href="/releases/">Change version</a>
+					<br >
+					<br >
+					<label for="zip-file" style="margin-right: 1rem">Preload project ZIP:</label>
+					<input id="zip-file" type="file" name="files" style="margin-bottom: 0.5rem">
+					<br>
+					<a href="demo.zip" id="zip-demo">(Try this for example)</a>
+					<br >
+					<button id="startButton" class="btn" style="margin-top: 2rem; margin-bottom: 3rem; font-weight: 700">Start Godot Editor</button>
+					<br >
+					<button class="btn" onclick="clearPersistence()" style="margin-bottom: 1.5rem">Clear Persistent Data</button>
+					<br >
+					<a href="https://docs.godotengine.org/en/stable/tutorials/editor/using_the_web_editor.html">Web editor documentation</a>
+				</div>
+			</div>
+			<div id="tab-editor" style="display: none;">
+				<canvas id="editor-canvas" tabindex="1">
+					HTML5 canvas appears to be unsupported in the current browser.<br >
+					Please try updating or use a different browser.
+				</canvas>
+			</div>
+			<div id="tab-game" style="display: none;">
+				<canvas id="game-canvas" tabindex="2">
+					HTML5 canvas appears to be unsupported in the current browser.<br >
+					Please try updating or use a different browser.
+				</canvas>
+			</div>
+			<div id="tab-status" style="display: none;">
+				<div id="status-progress" style="display: none;" oncontextmenu="event.preventDefault();">
+					<div id="status-progress-inner"></div>
+				</div>
+				<div id="status-indeterminate" style="display: none;" oncontextmenu="event.preventDefault();">
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</div>
+				<div id="status-notice" class="godot" style="display: none;"></div>
+			</div>
+		</div>
+		<script>
+window.addEventListener('load', () => {
+	function notifyUpdate(sw) {
+		const btn = document.getElementById('btn-tab-update');
+		btn.onclick = function () {
+			if (!window.confirm('Are you sure you want to update?\nClicking "OK" will reload all active instances!')) {
+				return;
+			}
+			sw.postMessage('update');
+			btn.innerHTML = 'Updating...';
+			btn.disabled = true;
+		};
+		btn.style.display = '';
+	}
+	if ('serviceWorker' in navigator) {
+		try {
+			navigator.serviceWorker.register('service.worker.js').then(function (reg) {
+				if (reg.waiting) {
+					notifyUpdate(reg.waiting);
+				}
+				reg.addEventListener('updatefound', function () {
+					const update = reg.installing;
+					update.addEventListener('statechange', function () {
+						if (update.state === 'installed') {
+							// It's a new install, claim and perform aggressive caching.
+							if (!reg.active) {
+								update.postMessage('claim');
+							} else {
+								notifyUpdate(update);
+							}
+						}
+					});
+				});
+			});
+		} catch (e) {
+			console.error('Error while registering service worker:', e);
+		}
+	}
+
+	const missing = Engine.getMissingFeatures({
+		threads: true,
+	});
+	if (missing.length) {
+		// Display error dialog as threading support is required for the editor.
+		document.getElementById('startButton').disabled = 'disabled';
+		document.getElementById('welcome-modal-description').style.display = 'none';
+		document.getElementById('welcome-modal-missing-description').style.display = 'block';
+		document.getElementById('welcome-modal-dismiss').style.display = 'none';
+		const list = document.getElementById('welcome-modal-missing-list');
+		for (let i = 0; i < missing.length; i++) {
+			const node = document.createElement('li');
+			node.innerText = missing[i];
+			list.appendChild(node);
+		}
+	}
+
+	// GodotCampus: the advisory modal is not shown to learners; a browser
+	// that is genuinely MISSING something still reports it, because that
+	// is a failure they have to be told about rather than an advisory.
+	if (missing.length) {
+		document.getElementById('welcome-modal').style.display = 'block';
+		document.getElementById('welcome-modal-dismiss').focus();
+	}
+});
+
+function closeWelcomeModal(dontShowAgain) { // eslint-disable-line no-unused-vars
+	document.getElementById('welcome-modal').style.display = 'none';
+	if (dontShowAgain) {
+		localStorage.setItem('welcomeModalDismissed', 'true');
+	}
+}
+		</script>
+		<script src="godot.editor.js"></script>
+		<script>
+let editor = null;
+let game = null;
+let setStatusMode;
+let setStatusNotice;
+
+function clearPersistence() { // eslint-disable-line no-unused-vars
+	function deleteDB(path) {
+		return new Promise(function (resolve, reject) {
+			const req = indexedDB.deleteDatabase(path);
+			req.onsuccess = function () {
+				resolve();
+			};
+			req.onerror = function (err) {
+				reject(err);
+			};
+			req.onblocked = function (err) {
+				reject(err);
+			};
+		});
+	}
+	if (!window.confirm('Are you sure you want to delete all the locally stored files?\nClicking "OK" will permanently remove your projects and editor settings!')) {
+		return;
+	}
+	Promise.all([
+		deleteDB('/home/web_user'),
+	]).then(function (results) {
+		alert('Done.');
+	}).catch(function (err) {
+		alert('Error deleting local files. Please retry after reloading the page.');
+	});
+}
+
+const tabs = [
+	document.getElementById('tab-loader'),
+	document.getElementById('tab-editor'),
+	document.getElementById('tab-game'),
+	// GodotCampus: upstream omits this one, so `showTab('status')`
+	// hides all three and shows nothing — including the failure notice.
+	document.getElementById('tab-status'),
+];
+function showTab(name) {
+	tabs.forEach(function (elem) {
+		if (elem.id === `tab-${name}`) {
+			elem.style.display = 'block';
+			if (name === 'editor' || name === 'game') {
+				const canvas = document.getElementById(`${name}-canvas`);
+				canvas.focus();
+			}
+		} else {
+			elem.style.display = 'none';
+		}
+	});
+}
+
+function setButtonEnabled(id, enabled) {
+	if (enabled) {
+		document.getElementById(id).disabled = '';
+	} else {
+		document.getElementById(id).disabled = 'disabled';
+	}
+}
+
+function setLoaderEnabled(enabled) {
+	setButtonEnabled('btn-tab-loader', enabled);
+	setButtonEnabled('btn-tab-editor', !enabled);
+	setButtonEnabled('btn-close-editor', !enabled);
+}
+
+function setGameTabEnabled(enabled) {
+	setButtonEnabled('btn-tab-game', enabled);
+	setButtonEnabled('btn-close-game', enabled);
+}
+
+function closeGame() {
+	if (game) {
+		game.requestQuit();
+	}
+	// GodotCampus: the editor is not told the game quit, so the
+	// add-on watches this count and stops the run itself.
+	window.campusGameClosed = (window.campusGameClosed | 0) + 1;
+}
+
+function closeEditor() { // eslint-disable-line no-unused-vars
+	closeGame();
+	if (editor) {
+		editor.requestQuit();
+	}
+}
+
+function startEditor(projectDir, provisionWorld) {
+	const INDETERMINATE_STATUS_STEP_MS = 100;
+	// GodotCampus: `/userfs` is where the PROJECT's user:// lives — the
+	// session, the device id, progress, the packs and the offline
+	// entitlement token. Without it every reload is a new machine to us:
+	// signed out, and a fresh device against a cap of three.
+	const persistentPaths = ['/home/web_user', '/userfs'];
+
+	let editorCanvas = document.getElementById('editor-canvas');
+	let gameCanvas = document.getElementById('game-canvas');
+	const statusProgress = document.getElementById('status-progress');
+	const statusProgressInner = document.getElementById('status-progress-inner');
+	const statusIndeterminate = document.getElementById('status-indeterminate');
+	const statusNotice = document.getElementById('status-notice');
+	const headerDiv = document.getElementById('tabs-buttons');
+
+	let initializing = true;
+	let statusMode = 'hidden';
+
+	showTab('status');
+
+	let animationCallbacks = [];
+	function animate(time) {
+		animationCallbacks.forEach((callback) => callback(time));
+		requestAnimationFrame(animate);
+	}
+	requestAnimationFrame(animate);
+
+	let lastScale = 0;
+	let lastWidth = 0;
+	let lastHeight = 0;
+	function adjustCanvasDimensions() {
+		const scale = window.devicePixelRatio || 1;
+		const headerHeight = headerDiv.offsetHeight + 1;
+		const width = window.innerWidth;
+		const height = window.innerHeight - headerHeight;
+		if (lastScale !== scale || lastWidth !== width || lastHeight !== height) {
+			editorCanvas.width = width * scale;
+			editorCanvas.height = height * scale;
+			editorCanvas.style.width = `${width}px`;
+			editorCanvas.style.height = `${height}px`;
+			lastScale = scale;
+			lastWidth = width;
+			lastHeight = height;
+		}
+	}
+	animationCallbacks.push(adjustCanvasDimensions);
+	adjustCanvasDimensions();
+
+	function replaceCanvas(from) {
+		const out = document.createElement('canvas');
+		out.id = from.id;
+		out.tabIndex = from.tabIndex;
+		from.parentNode.replaceChild(out, from);
+		lastScale = 0;
+		return out;
+	}
+
+	function animateStatusIndeterminate(ms) {
+		const i = Math.floor((ms / INDETERMINATE_STATUS_STEP_MS) % 8);
+		if (statusIndeterminate.children[i].style.borderTopColor === '') {
+			Array.prototype.slice.call(statusIndeterminate.children).forEach((child) => {
+				child.style.borderTopColor = '';
+			});
+			statusIndeterminate.children[i].style.borderTopColor = '#dfdfdf';
+		}
+	}
+
+	setStatusMode = function (mode) {
+		if (statusMode === mode || !initializing) {
+			return;
+		}
+		[statusProgress, statusIndeterminate, statusNotice].forEach((elem) => {
+			elem.style.display = 'none';
+		});
+		animationCallbacks = animationCallbacks.filter(function (value) {
+			return (value !== animateStatusIndeterminate);
+		});
+		switch (mode) {
+		case 'progress':
+			statusProgress.style.display = 'block';
+			break;
+		case 'indeterminate':
+			statusIndeterminate.style.display = 'block';
+			animationCallbacks.push(animateStatusIndeterminate);
+			break;
+		case 'notice':
+			statusNotice.style.display = 'block';
+			break;
+		case 'hidden':
+			break;
+		default:
+			throw new Error('Invalid status mode');
+		}
+		statusMode = mode;
+	};
+
+	setStatusNotice = function (text) {
+		while (statusNotice.lastChild) {
+			statusNotice.removeChild(statusNotice.lastChild);
+		}
+		const lines = text.split('\n');
+		lines.forEach((line) => {
+			statusNotice.appendChild(document.createTextNode(line));
+			statusNotice.appendChild(document.createElement('br'));
+		});
+	};
+
+	const gameConfig = {
+		'persistentPaths': persistentPaths,
+		'unloadAfterInit': false,
+		'canvas': gameCanvas,
+		'canvasResizePolicy': 1,
+		'onExit': function () {
+			gameCanvas = replaceCanvas(gameCanvas);
+			setGameTabEnabled(false);
+			showTab('editor');
+			game = null;
+		},
+	};
+
+	let OnEditorExit = function () {
+		showTab('loader');
+		setLoaderEnabled(true);
+	};
+	function Execute(args) {
+		const is_editor = args.filter(function (v) {
+			return v === '--editor' || v === '-e';
+		}).length !== 0;
+		const is_project_manager = args.filter(function (v) {
+			return v === '--project-manager';
+		}).length !== 0;
+		const is_game = !is_editor && !is_project_manager;
+
+		if (is_game) {
+			if (game) {
+				console.error('A game is already running. Close it first');
+				return;
+			}
+			setGameTabEnabled(true);
+			game = new Engine(gameConfig);
+			showTab('game');
+			// GodotCampus: the editor is not on screen from here.
+			campusGameBanner(true);
+			game.init().then(function () {
+				requestAnimationFrame(function () {
+					game.start({ 'args': args, 'canvas': gameCanvas }).then(function () {
+						gameCanvas.focus();
+					});
+				});
+			});
+		} else { // New editor instances will be run in the same canvas. We want to wait for it to exit.
+			OnEditorExit = function (code) {
+				setLoaderEnabled(true);
+				setTimeout(function () {
+					editor.init().then(function () {
+						setLoaderEnabled(false);
+						OnEditorExit = function () {
+							showTab('loader');
+							setLoaderEnabled(true);
+						};
+						editor.start({ 'args': args, 'persistentDrops': is_project_manager, 'canvas': editorCanvas });
+					});
+				}, 0);
+				OnEditorExit = null;
+			};
+		}
+	}
+
+	const clamp = (value, min, max) => Math.min(Math.max(value, min), max);
+	// We need at least 6 free threads from the pool to start the editor.
+	// At least 4 more will be reserved for the godot thread pool (3 is the bare minimum with the multithreaded variant of the servers).
+	const concurrency = clamp(navigator.hardwareConcurrency ?? 1, 12, 24);
+	const editorConfig = {
+		'unloadAfterInit': false,
+		'onProgress': function progressFunction(current, total) {
+			// GodotCampus: the same numbers, somewhere a learner can see them.
+			campusEngineProgress(current, total);
+			if (total > 0) {
+				statusProgressInner.style.width = `${(current / total) * 100}%`;
+				setStatusMode('progress');
+				if (current === total) {
+					// wait for progress bar animation
+					setTimeout(() => {
+						setStatusMode('indeterminate');
+					}, 100);
+				}
+			} else {
+				setStatusMode('indeterminate');
+			}
+		},
+		'canvas': editorCanvas,
+		'canvasResizePolicy': 0,
+		'onExit': function () {
+			editorCanvas = replaceCanvas(editorCanvas);
+			if (OnEditorExit) {
+				OnEditorExit();
+			}
+		},
+		'onExecute': Execute,
+		'persistentPaths': persistentPaths,
+		'emscriptenPoolSize': concurrency,
+		'godotPoolSize': Math.floor(concurrency / 3), // Ensures at least 4 threads for the pool (see above).
+	};
+	editor = new Engine(editorConfig);
+
+	function displayFailureNotice(err) {
+		console.error(err);
+		if (err instanceof Error) {
+			setStatusNotice(err.message);
+		} else if (typeof err === 'string') {
+			setStatusNotice(err);
+		} else {
+			setStatusNotice('An unknown error occurred.');
+		}
+		setStatusMode('notice');
+		// GodotCampus: and on the overlay, which is what is on screen.
+		campusFailed(err);
+		initializing = false;
+	}
+
+	if (!Engine.isWebGLAvailable()) {
+		displayFailureNotice('WebGL not available');
+	} else {
+		setStatusMode('indeterminate');
+		editor.init('godot.editor').then(async function () {
+			if (provisionWorld) {
+				// HANDLED WHERE THE AWAIT IS. Letting this reject would hand
+				// the failure to the vendor's own English notice, and the
+				// learner would never see the way out.
+				try {
+					await campusProvision(editor, provisionWorld);
+				} catch (err) {
+					campusFailed(err);
+					return;
+				}
+			}
+			// AFTER provisioning and OUTSIDE it: a world already installed
+			// is not downloaded again, and a link naming a lesson in it must
+			// still be honoured. Before the args below, which are what open
+			// the project.
+			campusWriteOpenRequest(editor, projectDir);
+			try {
+				// Avoid user creating project in the persistent root folder.
+				editor.copyToFS('/home/web_user/keep', new Uint8Array());
+			} catch (e) {
+				// File exists
+			}
+			showTab('editor');
+			setLoaderEnabled(false);
+			// GodotCampus: the canvas exists; the project is now importing
+			// behind it, and that phase reports nothing at all.
+			campusEditorVisible();
+			// GodotCampus: the project is always opened directly. Provisioning
+			// happens above, so there is never an archive for Godot's own
+			// installer to unpack and never a project manager to pass through.
+			const args = ['--path', projectDir, '--editor', '--single-window'];
+			editor.start({ 'args': args, 'persistentDrops': true }).then(function () {
+				setStatusMode('hidden');
+				initializing = false;
+			});
+		}).catch(displayFailureNotice);
+	}
+}
+
+function preloadZip(target) {
+	return new Promise(function (resolve, reject) {
+		if (target.files.length > 0) {
+			target.files[0].arrayBuffer().then(function (data) {
+				resolve(data);
+			});
+		} else {
+			resolve();
+		}
+	});
+}
+
+// --- GodotCampus launcher ----------------------------------------------------
+//
+// Replaces Godot's landing page. The learner never sees a file picker, a
+// version switcher, a project manager, or a button that deletes their work.
+// WHAT THE LEARNER READS WHILE IT LOADS.
+//
+// Indonesian is the default because that is what the release default is; English
+// is the option. `navigator.language` is deliberately not consulted — it reports
+// what the BROWSER was installed with, which in this market is overwhelmingly
+// English whatever the person actually reads, so honouring it would serve
+// English to exactly the audience the Indonesian release exists for.
+//
+// The STOREFRONT passes `?lang=`, because only it knows whether a choice was
+// made on this machine. Same rule as `x-godotcampus-locale`: the client states
+// its own resolution rather than letting the far end guess.
+const CAMPUS_TEXT = {
+	id: {
+		starting: 'Menyiapkan…',
+		engine: 'Mengunduh editor Godot… {percent}%',
+		enginePrep: 'Menyiapkan editor Godot…',
+		importing: 'Menyiapkan file pelajaranmu…',
+		firstTime: 'Kunjungan pertama memang paling lama — sesudah ini jauh lebih cepat.',
+		dontClose: 'Biarkan tab ini terbuka.',
+		stillGoing: 'Masih berjalan. Di koneksi sekolah, ini bisa memakan beberapa menit.',
+		importFreeze: 'Godot sedang menyiapkan semua aset. Ini bagian paling lama dan halaman akan berhenti merespons sampai selesai — itu normal. Jangan tutup atau muat ulang tabnya.',
+		showAnyway: 'Tampilkan editor',
+		takingLonger: 'Ini lebih lama dari biasanya. Editornya sudah ada di belakang layar ini — kamu bisa membukanya sekarang, atau biarkan saja sampai selesai.',
+		settingUp: 'Menyiapkan proyekmu untuk pertama kali…',
+		updating: 'Memperbarui GodotCampus ke versi terbaru…',
+		gameRunning: 'Game-mu sedang berjalan di tab ini. Tutup lewat tanda × di tab Game untuk kembali ke pelajaran.',
+		settingUpPercent: 'Menyiapkan proyekmu… {percent}%',
+		opening: 'Membuka proyekmu…',
+		notReady: 'Dunia ini belum siap untuk browser.',
+		notReadyAction: 'Unduh Godot untuk komputermu',
+		failed: 'Tidak bisa memulai: {reason}',
+		incomplete: 'Unduhan tidak lengkap. Coba muat ulang halaman ini.',
+	},
+	en: {
+		starting: 'Starting…',
+		engine: 'Downloading the Godot editor… {percent}%',
+		enginePrep: 'Getting the Godot editor ready…',
+		importing: 'Preparing your lesson files…',
+		firstTime: 'The first visit is the slowest — after this it is much faster.',
+		dontClose: 'Keep this tab open.',
+		stillGoing: 'Still working. On a school connection this can take several minutes.',
+		importFreeze: 'Godot is preparing every asset. This is the longest part, and the page will stop responding until it finishes — that is normal. Do not close or reload the tab.',
+		showAnyway: 'Show the editor',
+		takingLonger: 'This is taking longer than usual. The editor is already behind this screen — you can open it now, or leave this running until it finishes.',
+		settingUp: 'Setting up your project for the first time…',
+		updating: 'Updating GodotCampus to the latest version…',
+		gameRunning: 'Your game is running in this tab. Close it with the × on the Game tab to go back to the lesson.',
+		settingUpPercent: 'Setting up your project… {percent}%',
+		opening: 'Opening your project…',
+		notReady: 'This world is not ready for the browser yet.',
+		notReadyAction: 'Download Godot for your computer',
+		failed: 'Could not start: {reason}',
+		incomplete: 'The download was incomplete. Try reloading this page.',
+	},
+};
+
+const CAMPUS_FS = '/home/web_user';
+const CAMPUS_DEFAULT_WORLD = 'run_kitty_run';
+const CAMPUS_DEFAULT_LANG = 'id';
+
+function campusParam(name) {
+	return new URLSearchParams(window.location.search).get(name) || '';
+}
+
+function campusLang() {
+	const asked = campusParam('lang');
+	return Object.prototype.hasOwnProperty.call(CAMPUS_TEXT, asked)
+		? asked
+		: CAMPUS_DEFAULT_LANG;
+}
+
+function campusSay(key, values) {
+	const dictionary = CAMPUS_TEXT[campusLang()] || CAMPUS_TEXT[CAMPUS_DEFAULT_LANG];
+	let line = dictionary[key] || CAMPUS_TEXT.en[key] || key;
+	for (const name in (values || {})) {
+		line = line.replace('{' + name + '}', values[name]);
+	}
+	return line;
+}
+
+// --- WHAT THE LEARNER WATCHES WHILE IT LOADS ---------------------------------
+//
+// THE OVERLAY IS `position: fixed` AND LIVES OUTSIDE `#tabs`, which is the whole
+// design. `startEditor()` opens with `showTab('status')`, and `#tab-status` is
+// not in the vendor's `tabs` array — so that call hides the loader, the editor
+// and the game and shows nothing. Anything inside `#tabs` disappears with them.
+//
+// It is dismissed by the ADD-ON, over `window.campusEditorReady`, because the
+// add-on is the only thing that knows the campus panel is on screen. Everything
+// else — the engine promise, the canvas appearing — resolves while Godot is
+// still importing behind a black canvas, which is precisely the wait this
+// screen exists to explain.
+let campusOverlayGone = false;
+let campusOverlayFailed = false;
+// THE PHASES ONLY MOVE FORWARDS. Emscripten calls `onProgress` again while
+// `editor.start()` runs — after the canvas is up — and with no total, so the
+// engine reporter below took the status line back to "getting the Godot editor
+// ready" while Godot was importing the project. Sequencing the two calls could
+// not fix that; refusing to go backwards can.
+let campusEditorShown = false;
+
+// AFTER TWENTY-FIVE SECONDS, SAY SO. Long enough that an ordinary open never
+// sees it; short enough that somebody on a school connection is told the wait is
+// expected rather than left deciding whether to reload.
+const CAMPUS_SLOW_AFTER_MS = 25000;
+// AND AFTER TEN MINUTES IT SAYS SO — it does NOT dismiss itself.
+//
+// It used to. Measured in a tab that had been open half an hour: the overlay was
+// gone, `campus-status` still read "Preparing your lesson files…", and the
+// import had not advanced a single entry. The ceiling had removed the screen
+// that was EXPLAINING the wait, from a wait that was still running, leaving a
+// black canvas and nothing to read.
+//
+// A bound exists so a learner cannot be trapped. Taking away the explanation is
+// not untrapping them — the way out has been on screen since the canvas
+// appeared, and it is theirs to press. So this escalates instead: the overlay
+// lifts when something is READY, and otherwise says the wait is longer than
+// expected and points at the door.
+const CAMPUS_CEILING_MS = 10 * 60 * 1000;
+
+function campusNode(id) {
+	return document.getElementById(id);
+}
+
+function campusStatus(text) {
+	const node = campusNode('campus-status');
+	if (node) {
+		node.textContent = text;
+	}
+}
+
+function campusNote(text) {
+	const node = campusNode('campus-note');
+	if (node) {
+		node.textContent = text;
+	}
+}
+
+// A FRACTION WHEN WE HAVE ONE, A MOVING BAR WHEN WE DO NOT. Both phases that
+// know a number report it; the import does not, and a bar frozen at some
+// invented percentage would be a lie a learner can see.
+function campusProgress(fraction) {
+	const bar = campusNode('campus-bar');
+	const inner = campusNode('campus-bar-inner');
+	if (!bar || !inner) {
+		return;
+	}
+	if (fraction === null || fraction === undefined) {
+		bar.className = 'indeterminate';
+		inner.style.width = '';
+	} else {
+		bar.className = '';
+		inner.style.width = (Math.max(0, Math.min(1, fraction)) * 100) + '%';
+	}
+}
+
+// THE 91 MB DOWNLOAD, WHICH REPORTED ITSELF TO A HIDDEN ELEMENT. The vendor's
+// own `onProgress` writes into `#status-progress-inner`, inside `#tab-status`,
+// which nothing ever displays.
+function campusEngineProgress(current, total) {
+	if (campusOverlayGone || campusOverlayFailed || campusEditorShown) {
+		return;
+	}
+	if (total > 0) {
+		campusProgress(current / total);
+		campusStatus(campusSay('engine', {
+			percent: Math.round((current / total) * 100),
+		}));
+	} else {
+		campusProgress(null);
+		campusStatus(campusSay('enginePrep'));
+	}
+}
+
+// THE CANVAS IS UP, AND THAT IS NOT READY. Godot now imports the project, which
+// on a first visit is every asset in the world and the longest phase of the
+// whole open. `build-web-project-zip.py` skips `.godot/`, so nothing is
+// imported when the bundle arrives — see ROADMAP 139, which is a decision about
+// tripling the download rather than a defect to fix here.
+function campusEditorVisible() {
+	if (campusOverlayGone || campusOverlayFailed) {
+		return;
+	}
+	campusEditorShown = true;
+	campusProgress(null);
+	campusStatus(campusSay('importing'));
+
+	// THE LAST THING THAT RUNS BEFORE THE PAGE FREEZES, so it is the last thing
+	// that can be said. Measured: from here until the import finishes the main
+	// thread never yields — every synchronous read timed out at 45 seconds, for
+	// twenty-five minutes. The 25-second "still working" timer and the
+	// ten-minute escalation below are both scheduled, and NEITHER can fire in
+	// that window; a timer that explains a wait cannot run inside it.
+	//
+	// So whatever is on screen now is what the learner reads for the whole
+	// wait, and it had better say that a frozen page is expected — otherwise
+	// the reasonable thing to do is reload, which starts the import again.
+	const freeze = campusNode('campus-slow');
+	if (freeze) {
+		freeze.textContent = campusSay('importFreeze');
+	}
+	// FROM HERE THERE IS SOMETHING UNDERNEATH WORTH SHOWING, so the way out
+	// appears. Before this there is a black canvas, and offering to reveal it
+	// would be offering the blank screen this overlay exists to replace.
+	const escape = campusNode('campus-escape');
+	if (escape) {
+		escape.style.display = 'block';
+	}
+}
+
+function campusOverlayDone() {
+	if (campusOverlayGone) {
+		return;
+	}
+	campusOverlayGone = true;
+	const overlay = campusNode('campus-loading');
+	if (!overlay) {
+		return;
+	}
+	overlay.style.opacity = '0';
+	// Removed rather than left transparent: a fixed element over the editor
+	// swallows every click, and `pointer-events` is one more thing to get wrong.
+	setTimeout(function () {
+		overlay.style.display = 'none';
+	}, 400);
+}
+
+// WHAT THE ADD-ON CALLS. `plugin.gd` reaches this through `JavaScriptBridge`
+// once the campus panel is on screen — the first moment anything a learner can
+// use exists. Guarded on the add-on side by `OS.has_feature("web")`, so the
+// desktop needs no equivalent and is owed none.
+window.campusEditorReady = function campusEditorReady() {
+	campusOverlayDone();
+};
+
+function campusWatchTheClock() {
+	setTimeout(function () {
+		if (campusOverlayGone || campusOverlayFailed) {
+			return;
+		}
+		// NOT OVER THE FREEZE WARNING. `campusEditorVisible()` writes the line
+		// that says the page is about to stop responding, and this timer used to
+		// replace it with the milder one — visible in a learner's screenshot,
+		// which showed `stillGoing` where `importFreeze` had been written.
+		// The later, more specific message wins.
+		if (campusEditorShown) {
+			return;
+		}
+		const node = campusNode('campus-slow');
+		if (node) {
+			node.textContent = campusSay('stillGoing');
+		}
+	}, CAMPUS_SLOW_AFTER_MS);
+	setTimeout(function () {
+		// A FAILURE KEEPS THE SCREEN, and so does a wait that is simply long.
+		// The reason and the way out are written here; lifting the overlay
+		// would replace them with a blank canvas — which is what it used to do.
+		if (campusOverlayGone || campusOverlayFailed) {
+			return;
+		}
+		const node = campusNode('campus-slow');
+		if (node) {
+			node.textContent = campusSay('takingLonger');
+		}
+		// AND THE DOOR IS MADE OBVIOUS, rather than opened for them. It has been
+		// there since the canvas appeared; after ten minutes it stops being a
+		// quiet footnote.
+		const escape = campusNode('campus-escape');
+		if (escape) {
+			escape.style.display = 'block';
+			escape.className = 'urgent';
+		}
+	}, CAMPUS_CEILING_MS);
+}
+
+function campusOverlayInit() {
+	campusProgress(null);
+	campusNote(campusSay('dontClose'));
+	const link = campusNode('campus-show-anyway');
+	if (link) {
+		link.textContent = campusSay('showAnyway');
+		link.addEventListener('click', function (event) {
+			event.preventDefault();
+			campusOverlayDone();
+		});
+	}
+	campusWatchTheClock();
+}
+
+// WHO THE SITE SAYS IS SIGNED IN, read ONCE and taken off the address bar.
+//
+// THREE ANSWERS, AND THE THIRD IS SILENCE. A 64-hex grant means sign in as that
+// person; `none` means nobody is signed in on the site, which the add-on answers
+// by signing out — that is what makes a shared school browser safe. No `auth`
+// parameter at all means the site did not say, and the add-on then changes
+// nothing: a learner who opened this page from a bookmark, or whose session
+// could not be read for a moment, keeps the session and the seventeen days of
+// offline entitlement that go with it.
+//
+// STRIPPED IMMEDIATELY. The grant is single use and lives two minutes, so this
+// is the cheap half of the defence rather than the load-bearing one — but an
+// address bar is a history entry, a screenshot of a classroom projector and
+// whatever somebody pastes into a chat, and none of those need it.
+const CAMPUS_GRANT = (function campusTakeGrant() {
+	const value = campusParam('auth');
+	if (!value) {
+		return null;
+	}
+	try {
+		const url = new URL(window.location.href);
+		url.searchParams.delete('auth');
+		window.history.replaceState(null, '', url.toString());
+	} catch (e) {
+		// A browser that refuses replaceState still gets a working editor; the
+		// grant is spent by the time anything could be done with it.
+	}
+	if (value === 'none') {
+		return { signed_out: true };
+	}
+	// `randomHex(32)` on the server, so 64 hex digits. Shape-checked because it
+	// becomes the contents of a file the add-on parses — the same reason the
+	// world and the module are.
+	return /^[a-f0-9]{64}$/.test(value) ? { auth: value } : null;
+}());
+
+// WHAT THE LINK ASKED TO OPEN, handed to the editor as a file it reads once.
+//
+// A file rather than something the add-on reads off the URL: `JavaScriptBridge`
+// would work here and nowhere else, leaving the desktop editor needing a second
+// mechanism for the same request. A file is one mechanism — a desktop launcher
+// or a protocol handler can write exactly this later and the add-on does not
+// change.
+//
+// Shape-checked for the same reason `world` is: it becomes the contents of a
+// file something else parses. A module id carries digits at the front
+// (`020_falling`), which a world id does not.
+function campusOpenRequest() {
+	const request = {};
+	const module = campusParam('module');
+	const course = campusParam('course');
+	if (/^[a-z0-9_]{1,64}$/.test(module)) {
+		request.module = module;
+	}
+	if (/^[a-z0-9_]{1,64}$/.test(course)) {
+		request.course = course;
+	}
+	// THE SIGN-IN RIDES IN THE SAME FILE. Not because it is the same kind of
+	// thing, but because it is the same MOMENT: the launcher writes what this
+	// link asked for, once, before the editor comes up, and the add-on reads it
+	// once and deletes it. A second file would be a second lifetime to get
+	// right, and this one is already deleted before it is acted on.
+	//
+	// KEY BY KEY, NOT `Object.assign`. `web_editor_link.py` compares what this
+	// function writes against what the add-on reads, by finding `request.x =` —
+	// so a spread put both of these in a blind spot and the comparison passed
+	// while checking nothing. Spelling them out is also how a reader learns what
+	// is in the file.
+	if (CAMPUS_GRANT && CAMPUS_GRANT.auth) {
+		request.auth = CAMPUS_GRANT.auth;
+	}
+	if (CAMPUS_GRANT && CAMPUS_GRANT.signed_out) {
+		request.signed_out = true;
+	}
+	return (request.module || request.course || request.auth || request.signed_out)
+		? request
+		: null;
+}
+
+// Written EVERY launch, not only the first: a learner who already has this world
+// clicks a different lesson tomorrow and the request has to reach the editor
+// then too. Nothing is written when nothing was asked for, so an ordinary launch
+// leaves no file and the add-on's "no file" path stays the ordinary one — which
+// is also what a bookmarked URL with no `auth` on it produces, and why opening
+// the editor directly never disturbs a signed-in learner.
+function campusWriteOpenRequest(editor, projectDir) {
+	const request = campusOpenRequest();
+	if (!request) {
+		return;
+	}
+	const bytes = new TextEncoder().encode(JSON.stringify(request));
+	editor.copyToFS(projectDir + '/campus_open.json', bytes);
+}
+
+// A DEAD END NEEDS A WAY OUT. `?back=` is the storefront's own URL, so a world
+// whose bundle has not been built yet offers the download rather than an HTTP
+// status the learner cannot act on.
+function campusDeadEnd(message) {
+	campusStatus(message);
+	const back = campusParam('back');
+	const node = document.getElementById('campus-status');
+	if (!node || !back || !/^https?:\/\//.test(back)) {
+		return;
+	}
+	const link = document.createElement('a');
+	link.href = back;
+	link.textContent = campusSay('notReadyAction');
+	link.style.display = 'inline-block';
+	link.style.marginTop = '1rem';
+	node.parentNode.appendChild(link);
+}
+
+// WHICH WORLD THIS PAGE WAS ASKED FOR. The storefront links here with it; a bare
+// URL falls back to the default rather than to whatever happens to be installed,
+// so the address is what decides and two tabs cannot disagree.
+//
+// Shape-checked against the same pattern the database and the catalogue header
+// use, because it is about to become a filesystem path.
+function campusWorld() {
+	const asked = campusParam('world');
+	return /^[a-z0-9_]{1,64}$/.test(asked) ? asked : CAMPUS_DEFAULT_WORLD;
+}
+
+function campusProjectDir(world) {
+	return CAMPUS_FS + '/' + world;
+}
+
+// WHICH BUILD THIS BROWSER HAS, written beside the project when it was copied.
+//
+// A CACHE WITH NO VERSION IS NOT A CACHE, IT IS A ONE-WAY DOOR. Until this
+// existed, a browser that had opened a world once ran that add-on for ever: the
+// launcher asked only "is it here", found it, and opened it. So no fix could
+// reach a learner who had visited before — which is how a client with no code
+// for the `?auth=` grant kept meeting a site that had started sending one, and
+// how this loading screen came to wait for a `campusEditorReady` the installed
+// build does not contain. Read out of a learner's own console:
+//
+//     [1] _ready (res://addons/godot_tours/campus/campus.gd:76)
+//
+// where this checkout's `campus.gd` has `_ready()` at line 97.
+const CAMPUS_BUILD_MARKER = '.campus_build';
+
+// READ FROM IndexedDB DIRECTLY, because this is answered BEFORE the engine
+// starts and there is no filesystem to ask yet. Same store and the same caution
+// as campusInstalled() below: anything unreadable answers '' and the world is
+// treated as needing a refresh, which costs a copy and never costs correctness.
+async function campusInstalledBuild(world) {
+	let databases = [];
+	try {
+		databases = await indexedDB.databases();
+	} catch (e) {
+		return '';
+	}
+	if (!databases.some((entry) => entry.name === CAMPUS_FS)) {
+		return '';
+	}
+	const db = await new Promise((resolve) => {
+		const request = indexedDB.open(CAMPUS_FS);
+		request.onsuccess = () => resolve(request.result);
+		request.onerror = () => resolve(null);
+		setTimeout(() => resolve(null), 5000);
+	});
+	if (db === null || !Array.from(db.objectStoreNames).includes('FILE_DATA')) {
+		if (db) {
+			db.close();
+		}
+		return '';
+	}
+	const key = campusProjectDir(world) + '/' + CAMPUS_BUILD_MARKER;
+	const found = await new Promise((resolve) => {
+		const request = db.transaction('FILE_DATA').objectStore('FILE_DATA').get(key);
+		request.onsuccess = () => resolve(request.result);
+		request.onerror = () => resolve(null);
+		setTimeout(() => resolve(null), 5000);
+	});
+	db.close();
+	if (!found || !found.contents) {
+		return '';
+	}
+	try {
+		return new TextDecoder().decode(found.contents).trim();
+	} catch (e) {
+		return '';
+	}
+}
+
+// The manifest, fetched once and remembered: campusLaunch() needs the build id
+// before it decides, campusProvision() needs the file list after.
+let campusManifestCache = null;
+
+// Whether this copy is a REFRESH rather than a first install. It changes only
+// what the learner is told: those are different waits, and the first visit is
+// the one that deserves the warning about how long it takes.
+let campusRefreshing = false;
+
+async function campusManifest(world) {
+	if (campusManifestCache !== null) {
+		return campusManifestCache;
+	}
+	const response = await fetch(encodeURIComponent(world) + '.files.json');
+	if (!response.ok) {
+		const problem = new Error(campusSay('notReady'));
+		problem.deadEnd = true;
+		throw problem;
+	}
+	campusManifestCache = await response.json();
+	return campusManifestCache;
+}
+
+// THE GAME TAB SAYS HOW TO GET BACK, while the game is up.
+//
+// The editor — and the lesson's own bubble — is off screen from the moment Play
+// is pressed, so a line in the step is read before it is needed and gone by the
+// time it is. This one is on the tab the learner is looking at.
+//
+// Drawn over the game canvas rather than beside it: the canvas is sized by the
+// engine and anything in the flow above it would move the game.
+function campusGameBanner(show) {
+	var note = document.getElementById('campus-game-note');
+	if (!note) {
+		var host = document.getElementById('tab-game');
+		if (!host) {
+			return;
+		}
+		note = document.createElement('div');
+		note.id = 'campus-game-note';
+		note.style.cssText = 'position:fixed;left:50%;transform:translateX(-50%);'
+			+ 'bottom:16px;z-index:40;max-width:min(92vw,640px);'
+			+ 'padding:0.5rem 0.9rem;border-radius:8px;'
+			+ 'background:rgba(16,20,34,0.92);color:#e8ecf8;'
+			+ 'font:500 13px/1.45 system-ui,sans-serif;text-align:center;'
+			+ 'box-shadow:0 6px 24px rgba(0,0,0,0.45);pointer-events:none;';
+		host.appendChild(note);
+	}
+	note.textContent = campusSay('gameRunning');
+	note.style.display = show ? 'block' : 'none';
+}
+
+// BRINGING THE LEARNER BACK FROM THE GAME TAB.
+//
+// Pressing Play switches this page to the Game tab and leaves it there — even
+// once the game has stopped, which is a dead canvas with no way back that
+// anybody named. The add-on calls this when a run ends.
+window.campusShowEditor = function campusShowEditor() {
+	try {
+		campusGameBanner(false);
+		showTab('editor');
+	} catch (e) {
+		// The tab strip is the vendor's. If it ever stops answering, staying put
+		// is survivable; throwing inside a timer tick is not.
+	}
+};
+
+// How many times the x on the Game tab has been pressed. The add-on reads this
+// and turns it into a real stop, because the vendor's handler tells the editor
+// nothing. Declared here so it is never undefined on the first read.
+window.campusGameClosed = window.campusGameClosed | 0;
+
+// IS THIS WORLD ALREADY HERE? Asked of the world we were sent to, not "is there
+// any project at all" — that was the first version, and it opens whichever
+// project it happens to find first the moment a learner has two.
+async function campusInstalled(world) {
+	let databases = [];
+	try {
+		databases = await indexedDB.databases();
+	} catch (e) {
+		return false; // Older browsers: treat as a first visit.
+	}
+	if (!databases.some((entry) => entry.name === CAMPUS_FS)) {
+		return false;
+	}
+
+	const db = await new Promise((resolve) => {
+		const request = indexedDB.open(CAMPUS_FS);
+		request.onsuccess = () => resolve(request.result);
+		request.onerror = () => resolve(null);
+		// A blocked open must not hang the page for ever. Treating it as "not
+		// installed" is the safe direction: the worst case is re-provisioning.
+		setTimeout(() => resolve(null), 5000);
+	});
+	if (db === null || !Array.from(db.objectStoreNames).includes('FILE_DATA')) {
+		if (db) {
+			db.close();
+		}
+		return false;
+	}
+
+	const key = campusProjectDir(world) + '/project.godot';
+	const found = await new Promise((resolve) => {
+		const request = db.transaction('FILE_DATA').objectStore('FILE_DATA').getKey(key);
+		request.onsuccess = () => resolve(request.result !== undefined);
+		request.onerror = () => resolve(false);
+		setTimeout(() => resolve(false), 5000);
+	});
+	db.close();
+	return found;
+}
+
+// WRITES THE PROJECT ITSELF, so Godot's install dialog never appears and the
+// folder is named for the world.
+//
+// A manifest and one blob rather than a zip: nothing here parses an archive
+// format, and compression is the transport's job. `copyToFS` creates the parent
+// directories, which was probed against the real editor before this was written
+// — Godot's own project INSTALLER does not, which is the trap the zip builder
+// exists for.
+async function campusProvision(editor, world) {
+	const base = encodeURIComponent(world);
+	campusStatus(campusSay(campusRefreshing ? 'updating' : 'settingUp'));
+
+	const manifest = await campusManifest(world);
+	const blobRes = await fetch(base + '.bin');
+	if (!blobRes.ok) {
+		// THE WORLD HAS NO BUNDLE. The storefront cannot know this — the files
+		// live on the editor host, not in the database — so this is where a
+		// learner finds out, and it has to be a way out rather than a number.
+		const problem = new Error(campusSay('notReady'));
+		problem.deadEnd = true;
+		throw problem;
+	}
+
+	const blob = new Uint8Array(await blobRes.arrayBuffer());
+	if (blob.length !== manifest.bytes) {
+		// A truncated download would otherwise become a project made of the
+		// wrong bytes, which opens and is silently wrong.
+		throw new Error(campusSay('incomplete'));
+	}
+
+	const root = campusProjectDir(world);
+	// A REFRESH OVERWRITES; IT DOES NOT SWEEP, AND THAT IS LOAD-BEARING.
+	//
+	// Every file the manifest lists is written and nothing is removed, so a file
+	// DELETED between builds stays in this browser. An orphaned script is inert,
+	// because Godot loads what is referenced — but the reason not to tidy them
+	// away is far stronger than that, and it was measured rather than reasoned:
+	//
+	// THE IMPORT CACHE LIVES AT `<project>/.godot/` AND THE BUNDLE SHIPS NONE OF
+	// IT. A sweep would delete it on every refresh, so each update would pay the
+	// first-visit import again — the wait that is currently the worst thing about
+	// this product. Refreshing a pre-marker `campus_demo` in a real 4.7.1 web
+	// editor reached the editor in about 20 seconds, over 617 project entries of
+	// which 163 were `.godot/` and 108 were already-imported assets.
+	//
+	// So: a learner's own `lessons/` and `campus_game/` are untouched because the
+	// copy only writes what it lists, and the import cache survives for the same
+	// reason. Both are properties of not sweeping.
+	const files = manifest.files || [];
+	for (let i = 0; i < files.length; i++) {
+		const entry = files[i];
+		// Nothing may escape the world's own folder, whatever the manifest says.
+		if (entry.path.startsWith('/') || entry.path.split('/').indexOf('..') >= 0) {
+			throw new Error('The download named a file outside the project.');
+		}
+		editor.copyToFS(root + '/' + entry.path,
+			blob.subarray(entry.offset, entry.offset + entry.size));
+		if (i % 40 === 0) {
+			campusStatus(campusSay('settingUpPercent', {
+				percent: Math.round((i / files.length) * 100),
+			}));
+		}
+	}
+	// WRITTEN LAST, so a copy interrupted half way leaves no marker and is redone
+	// rather than mistaken for a finished one. Same reason a pack download lands
+	// on a `.part` and is promoted only once its hash checks out.
+	if (manifest.build_id) {
+		editor.copyToFS(root + '/' + CAMPUS_BUILD_MARKER,
+			new TextEncoder().encode(String(manifest.build_id)));
+	}
+
+	campusStatus(campusSay('opening'));
+}
+
+// ONE PLACE DECIDES WHAT A FAILURE LOOKS LIKE, because there are two places it
+// can happen: before the editor starts, and inside its promise chain while
+// provisioning. The second is the one that matters and the one that was missed
+// — a try/catch around a call that returns a promise it does not await catches
+// nothing, so a world with no bundle fell through to Godot's own English notice
+// and the status line said "setting up" for ever.
+function campusFailed(err) {
+	const reason = (err && err.message) ? err.message : String(err);
+	// THE OVERLAY STAYS, AND STOPS PRETENDING TO WORK. A moving bar over a
+	// failure reads as "still going", and the learner waits for something that
+	// is never coming. This also stops the ceiling above lifting the screen and
+	// taking the reason with it.
+	campusOverlayFailed = true;
+	campusProgress(0);
+	// AND THE WAITING COPY GOES WITH IT. "The first visit is the slowest" and
+	// "keep this tab open" are instructions for a wait that is now over, and
+	// underneath a line saying nothing is coming they read as a contradiction.
+	// Found by opening the page; every assertion about the dead end passed.
+	campusNote('');
+	const slow = campusNode('campus-slow');
+	if (slow) {
+		slow.textContent = '';
+	}
+	if (err && err.deadEnd) {
+		campusDeadEnd(reason);
+	} else {
+		campusStatus(campusSay('failed', { reason: reason }));
+	}
+}
+
+// A HOST THAT CANNOT SEND HEADERS STILL GETS ISOLATION.
+//
+// The engine needs `crossOriginIsolated`, which needs COOP and COEP on the
+// page. `serve-web-editor.py` sends them; GitHub Pages and most free static
+// hosts cannot. Godot's own service worker re-adds both to every response it
+// serves (`ENSURE_CROSSORIGIN_ISOLATION_HEADERS`), but only for pages it
+// CONTROLS, and the first visit is not one of them. So: register it, wait for
+// it to be active, and reload once — the reload is a controlled navigation.
+//
+// ONCE, guarded in sessionStorage: a host that strips the worker would
+// otherwise reload for ever. After that the vendor's own missing-features
+// check reports the browser honestly, which is the right failure.
+async function campusEnsureIsolation() {
+	if (window.crossOriginIsolated || !('serviceWorker' in navigator)) {
+		try { sessionStorage.removeItem('campusIsolationReload'); } catch (e) {}
+		return true;
+	}
+	let tried = false;
+	try { tried = sessionStorage.getItem('campusIsolationReload') === '1'; } catch (e) {}
+	if (tried) {
+		return true;
+	}
+	try {
+		await navigator.serviceWorker.register('service.worker.js');
+		await navigator.serviceWorker.ready;
+		sessionStorage.setItem('campusIsolationReload', '1');
+		location.reload();
+		return false;
+	} catch (e) {
+		console.error('GodotCampus: could not enable cross-origin isolation', e);
+		return true;
+	}
+}
+
+async function campusLaunch() {
+	if (!(await campusEnsureIsolation())) {
+		return;
+	}
+	campusOverlayInit();
+	campusStatus(campusSay('starting'));
+	try {
+		const world = campusWorld();
+		const here = await campusInstalled(world);
+
+		// AND IS IT THE BUILD WE ARE SERVING? "Is it here" was the whole
+		// question until 2026-09-18, and it made the copy a ONE-WAY DOOR.
+		//
+		// The old reason for never rewriting was that it "would put the shipped
+		// practice files back over a learner's work". MEASURED: the bundle holds
+		// `addons/`, `tours/`, `project.godot`, an icon and three text files —
+		// no `lessons/`, no `campus_game/`. A learner's work is written at
+		// runtime into directories this bundle has never heard of, and only the
+		// files it LISTS are copied, so none of it is reachable from here. The
+		// guard protected nothing and cost every fix that came after it.
+		let stale = false;
+		if (here) {
+			try {
+				const served = String((await campusManifest(world)).build_id || '');
+				const have = await campusInstalledBuild(world);
+				stale = served !== '' && served !== have;
+			} catch (e) {
+				// COULD NOT ASK IS NOT OUT OF DATE. A manifest that failed to
+				// fetch must not throw away a project that works offline.
+				stale = false;
+			}
+		}
+		campusRefreshing = stale;
+
+		// THE ENGINE COMES FIRST, NOT THE PROJECT. Provisioning happens inside
+		// `editor.init().then()`, so saying "setting up your project" here
+		// described the right wait in the wrong place — several minutes of a
+		// 91 MB download under a line about something that had not started.
+		campusStatus(campusSay('enginePrep'));
+		if (!here) {
+			campusNote(campusSay('firstTime') + ' ' + campusSay('dontClose'));
+		} else if (stale) {
+			campusNote(campusSay('dontClose'));
+		}
+		startEditor(campusProjectDir(world), (here && !stale) ? null : world);
+	} catch (err) {
+		campusFailed(err);
+	}
+}
+
+window.addEventListener('load', campusLaunch);
+
+const zipFile = document.getElementById('zip-file');
+const zipDemo = document.getElementById('zip-demo');
+
+function updateZipDemoDisplay() {
+	console.log(zipFile.files.length);
+	// Hide "Try this for example" link when a file is selected.
+	zipDemo.style.display = zipFile.files.length === 0 ? 'inline' : 'none';
+}
+
+zipFile.addEventListener('change', (_pEvent) => {
+	updateZipDemoDisplay();
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+	// Handle situation when a file is already specified on load (e.g. after a page refresh).
+	updateZipDemoDisplay();
+});
+		</script>
+	</body>
+</html>

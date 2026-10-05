@@ -1,0 +1,4543 @@
+{
+ "schema": 1,
+ "project": "campus_demo",
+ "bytes": 69400842,
+ "build_id": "7e4678dceb165576e919d6355051f7e32a0f8e766be411a8be364931d8d62fb6",
+ "files": [
+  {
+   "path": ".editorconfig",
+   "offset": 0,
+   "size": 158
+  },
+  {
+   "path": ".gitattributes",
+   "offset": 158,
+   "size": 80
+  },
+  {
+   "path": ".godot/.gdignore",
+   "offset": 238,
+   "size": 1
+  },
+  {
+   "path": ".godot/global_script_class_cache.cfg",
+   "offset": 239,
+   "size": 1517
+  },
+  {
+   "path": ".godot/imported/background_gradient.svg-eb230fb155f171515b633109fdaa02b5.ctex",
+   "offset": 1756,
+   "size": 76984
+  },
+  {
+   "path": ".godot/imported/background_gradient.svg-eb230fb155f171515b633109fdaa02b5.md5",
+   "offset": 78740,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/bar_bg_ninepatch.png-2bb5f6f42003f04114eddc00359deb7a.ctex",
+   "offset": 78831,
+   "size": 324
+  },
+  {
+   "path": ".godot/imported/bar_bg_ninepatch.png-2bb5f6f42003f04114eddc00359deb7a.md5",
+   "offset": 79155,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/bolt.png-1fd402ed926c525726c46cdf5f8ebf99.ctex",
+   "offset": 79246,
+   "size": 496
+  },
+  {
+   "path": ".godot/imported/bolt.png-1fd402ed926c525726c46cdf5f8ebf99.md5",
+   "offset": 79742,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/books_3.png-50c609879be570c977c7f771262d3fc0.ctex",
+   "offset": 79833,
+   "size": 3008
+  },
+  {
+   "path": ".godot/imported/books_3.png-50c609879be570c977c7f771262d3fc0.md5",
+   "offset": 82841,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/campus_icon.svg-f109c2bad7a8387f0719e380b7e59f71.ctex",
+   "offset": 82932,
+   "size": 944
+  },
+  {
+   "path": ".godot/imported/campus_icon.svg-f109c2bad7a8387f0719e380b7e59f71.md5",
+   "offset": 83876,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/check.svg-c2fd36881bca105651465949f3ea4e6c.ctex",
+   "offset": 83967,
+   "size": 544
+  },
+  {
+   "path": ".godot/imported/check.svg-c2fd36881bca105651465949f3ea4e6c.md5",
+   "offset": 84511,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/chest_bottom.png-edc4994c29eabf336601d8dce40b559f.ctex",
+   "offset": 84602,
+   "size": 1174
+  },
+  {
+   "path": ".godot/imported/chest_bottom.png-edc4994c29eabf336601d8dce40b559f.md5",
+   "offset": 85776,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/chest_top.png-2b80e49f783e91cabd41f2d82b8cd606.ctex",
+   "offset": 85867,
+   "size": 1946
+  },
+  {
+   "path": ".godot/imported/chest_top.png-2b80e49f783e91cabd41f2d82b8cd606.md5",
+   "offset": 87813,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/chevron_right.svg-751384abbd2a6ef02adfa1a93ae5726f.ctex",
+   "offset": 87904,
+   "size": 360
+  },
+  {
+   "path": ".godot/imported/chevron_right.svg-751384abbd2a6ef02adfa1a93ae5726f.md5",
+   "offset": 88264,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/close.svg-a91bb473d8cd1e370e5ce60cd2473641.ctex",
+   "offset": 88355,
+   "size": 360
+  },
+  {
+   "path": ".godot/imported/close.svg-a91bb473d8cd1e370e5ce60cd2473641.md5",
+   "offset": 88715,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/cloud_a.png-340741b2e50beb164a7f97b0432ca08e.ctex",
+   "offset": 88806,
+   "size": 8588
+  },
+  {
+   "path": ".godot/imported/cloud_a.png-340741b2e50beb164a7f97b0432ca08e.md5",
+   "offset": 97394,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/cloud_b.png-349308762f3391fc0d5a0c5bd5629387.ctex",
+   "offset": 97485,
+   "size": 4492
+  },
+  {
+   "path": ".godot/imported/cloud_b.png-349308762f3391fc0d5a0c5bd5629387.md5",
+   "offset": 101977,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/cloud_c.png-90fb8a1473cd170c5b6f69685f3864d9.ctex",
+   "offset": 102068,
+   "size": 4552
+  },
+  {
+   "path": ".godot/imported/cloud_c.png-90fb8a1473cd170c5b6f69685f3864d9.md5",
+   "offset": 106620,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/cloud_d.png-695cb1192015aa63e5e33f7732bc71b8.ctex",
+   "offset": 106711,
+   "size": 8728
+  },
+  {
+   "path": ".godot/imported/cloud_d.png-695cb1192015aa63e5e33f7732bc71b8.md5",
+   "offset": 115439,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/copyright.svg-52bb95fdc3b40a70d7c11b04d622d9ce.ctex",
+   "offset": 115530,
+   "size": 1366
+  },
+  {
+   "path": ".godot/imported/copyright.svg-52bb95fdc3b40a70d7c11b04d622d9ce.md5",
+   "offset": 116896,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/course_ad_cover.png-0adebeb835cec90da24469b62e84d553.ctex",
+   "offset": 116987,
+   "size": 880250
+  },
+  {
+   "path": ".godot/imported/course_ad_cover.png-0adebeb835cec90da24469b62e84d553.md5",
+   "offset": 997237,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/death_01.wav-e5dcacd8ec4813b5b3045fc9c72d38be.md5",
+   "offset": 997328,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/death_01.wav-e5dcacd8ec4813b5b3045fc9c72d38be.sample",
+   "offset": 997419,
+   "size": 674347
+  },
+  {
+   "path": ".godot/imported/death_02.wav-6c41252cea1912049e7a8a58f11b1a14.md5",
+   "offset": 1671766,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/death_02.wav-6c41252cea1912049e7a8a58f11b1a14.sample",
+   "offset": 1671857,
+   "size": 745675
+  },
+  {
+   "path": ".godot/imported/death_03.wav-811c3410776f3b4855821fb7bbc31dc5.md5",
+   "offset": 2417532,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/death_03.wav-811c3410776f3b4855821fb7bbc31dc5.sample",
+   "offset": 2417623,
+   "size": 735895
+  },
+  {
+   "path": ".godot/imported/dungeon.png-4344495812239ec92ede76935b488c77.ctex",
+   "offset": 3153518,
+   "size": 256056
+  },
+  {
+   "path": ".godot/imported/dungeon.png-4344495812239ec92ede76935b488c77.md5",
+   "offset": 3409574,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/exclamation.svg-cc3fb18514e9484855470041b944546e.ctex",
+   "offset": 3409665,
+   "size": 342
+  },
+  {
+   "path": ".godot/imported/exclamation.svg-cc3fb18514e9484855470041b944546e.md5",
+   "offset": 3410007,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/eye_closed.png-21ec2f281f149f7cae3e396ab45113f4.ctex",
+   "offset": 3410098,
+   "size": 328
+  },
+  {
+   "path": ".godot/imported/eye_closed.png-21ec2f281f149f7cae3e396ab45113f4.md5",
+   "offset": 3410426,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/eye_default.png-5c6d13b6cb42fab9d718bb6f52e7c0a1.ctex",
+   "offset": 3410517,
+   "size": 798
+  },
+  {
+   "path": ".godot/imported/eye_default.png-5c6d13b6cb42fab9d718bb6f52e7c0a1.md5",
+   "offset": 3411315,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/eye_frowned.png-34e0e55e64aeb3b136379c77da075e7a.ctex",
+   "offset": 3411406,
+   "size": 446
+  },
+  {
+   "path": ".godot/imported/eye_frowned.png-34e0e55e64aeb3b136379c77da075e7a.md5",
+   "offset": 3411852,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/eyebrow_default.png-b4483bcbcf9d96a18245057485ec5ec8.ctex",
+   "offset": 3411943,
+   "size": 246
+  },
+  {
+   "path": ".godot/imported/eyebrow_default.png-b4483bcbcf9d96a18245057485ec5ec8.md5",
+   "offset": 3412189,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/face.png-390e7db41ec9d0370e83d675421bf258.ctex",
+   "offset": 3412280,
+   "size": 2544
+  },
+  {
+   "path": ".godot/imported/face.png-390e7db41ec9d0370e83d675421bf258.md5",
+   "offset": 3414824,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/far_island_1.png-c5f58a11f0b034990413b4b0a2a3aea2.ctex",
+   "offset": 3414915,
+   "size": 300
+  },
+  {
+   "path": ".godot/imported/far_island_1.png-c5f58a11f0b034990413b4b0a2a3aea2.md5",
+   "offset": 3415215,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/far_island_2.png-7aac23f4ea85156cd1a7750445e387f5.ctex",
+   "offset": 3415306,
+   "size": 386
+  },
+  {
+   "path": ".godot/imported/far_island_2.png-7aac23f4ea85156cd1a7750445e387f5.md5",
+   "offset": 3415692,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/fire.png-edf1b86c89e34ac071dc3273b3a59726.ctex",
+   "offset": 3415783,
+   "size": 802
+  },
+  {
+   "path": ".godot/imported/fire.png-edf1b86c89e34ac071dc3273b3a59726.md5",
+   "offset": 3416585,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/fire_trail.png-ce630ee4810cca69a1d1bf42b96e030f.ctex",
+   "offset": 3416676,
+   "size": 174
+  },
+  {
+   "path": ".godot/imported/fire_trail.png-ce630ee4810cca69a1d1bf42b96e030f.md5",
+   "offset": 3416850,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/game_over_sky.png-5d9b6e7bda40571da20cd6d568e04fb7.ctex",
+   "offset": 3416941,
+   "size": 13462
+  },
+  {
+   "path": ".godot/imported/game_over_sky.png-5d9b6e7bda40571da20cd6d568e04fb7.md5",
+   "offset": 3430403,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/gdschool_logo.svg-895e9f6ae092be88475dedee430f5aff.ctex",
+   "offset": 3430494,
+   "size": 53958
+  },
+  {
+   "path": ".godot/imported/gdschool_logo.svg-895e9f6ae092be88475dedee430f5aff.md5",
+   "offset": 3484452,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/gobot_mascot.png-48d66dc2e3e28c762a7b931079865aac.ctex",
+   "offset": 3484543,
+   "size": 10076
+  },
+  {
+   "path": ".godot/imported/gobot_mascot.png-48d66dc2e3e28c762a7b931079865aac.md5",
+   "offset": 3494619,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/godot_bottom.png-88d1ee004c00181e580c5fc3d22b5aa5.ctex",
+   "offset": 3494710,
+   "size": 8330
+  },
+  {
+   "path": ".godot/imported/godot_bottom.png-88d1ee004c00181e580c5fc3d22b5aa5.md5",
+   "offset": 3503040,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/godot_bottom_right.png-a3c8b0e8a7022f70a846450b795b7f55.ctex",
+   "offset": 3503131,
+   "size": 7676
+  },
+  {
+   "path": ".godot/imported/godot_bottom_right.png-a3c8b0e8a7022f70a846450b795b7f55.md5",
+   "offset": 3510807,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/godot_right.png-18fc62ebd5a18a99a4a747c07b05697b.ctex",
+   "offset": 3510898,
+   "size": 7148
+  },
+  {
+   "path": ".godot/imported/godot_right.png-18fc62ebd5a18a99a4a747c07b05697b.md5",
+   "offset": 3518046,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/godot_up.png-01ae59879d1293a6ede51517f394251c.ctex",
+   "offset": 3518137,
+   "size": 6268
+  },
+  {
+   "path": ".godot/imported/godot_up.png-01ae59879d1293a6ede51517f394251c.md5",
+   "offset": 3524405,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/godot_up_right.png-e946dbf36497ffdc7e95f8682d2e4e62.ctex",
+   "offset": 3524496,
+   "size": 5996
+  },
+  {
+   "path": ".godot/imported/godot_up_right.png-e946dbf36497ffdc7e95f8682d2e4e62.md5",
+   "offset": 3530492,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/hand_fire.png-32d757828755ec2bdfb634806b9d0cef.ctex",
+   "offset": 3530583,
+   "size": 2610
+  },
+  {
+   "path": ".godot/imported/hand_fire.png-32d757828755ec2bdfb634806b9d0cef.md5",
+   "offset": 3533193,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/hand_ice.png-595790178c6c630d385bd58086e69f3f.ctex",
+   "offset": 3533284,
+   "size": 2112
+  },
+  {
+   "path": ".godot/imported/hand_ice.png-595790178c6c630d385bd58086e69f3f.md5",
+   "offset": 3535396,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/hand_lightning.png-b91d24571691c732d5a8fd1fe3ed040d.ctex",
+   "offset": 3535487,
+   "size": 2182
+  },
+  {
+   "path": ".godot/imported/hand_lightning.png-b91d24571691c732d5a8fd1fe3ed040d.md5",
+   "offset": 3537669,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/hasklug_nerd_mono.otf-cbc777136d38df6e6055e244ef44e4bd.fontdata",
+   "offset": 3537760,
+   "size": 1738655
+  },
+  {
+   "path": ".godot/imported/hasklug_nerd_mono.otf-cbc777136d38df6e6055e244ef44e4bd.md5",
+   "offset": 5276415,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/health_point.png-c411c251d594c913b6f70b15ddf6d7a3.ctex",
+   "offset": 5276506,
+   "size": 294
+  },
+  {
+   "path": ".godot/imported/health_point.png-c411c251d594c913b6f70b15ddf6d7a3.md5",
+   "offset": 5276800,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/health_point_bg.png-4339669b151a9dfe64931620350fff7b.ctex",
+   "offset": 5276891,
+   "size": 260
+  },
+  {
+   "path": ".godot/imported/health_point_bg.png-4339669b151a9dfe64931620350fff7b.md5",
+   "offset": 5277151,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/hit_fire.wav-f1055757b9bf94f56b3374519524a5d1.md5",
+   "offset": 5277242,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/hit_fire.wav-f1055757b9bf94f56b3374519524a5d1.sample",
+   "offset": 5277333,
+   "size": 96471
+  },
+  {
+   "path": ".godot/imported/hit_ice.wav-040ccc460a118e246d527ad3b5e9f0cb.md5",
+   "offset": 5373804,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/hit_ice.wav-040ccc460a118e246d527ad3b5e9f0cb.sample",
+   "offset": 5373895,
+   "size": 248303
+  },
+  {
+   "path": ".godot/imported/hit_lightning.wav-1da5c60b20cf3f4993737a5be961629c.md5",
+   "offset": 5622198,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/hit_lightning.wav-1da5c60b20cf3f4993737a5be961629c.sample",
+   "offset": 5622289,
+   "size": 209779
+  },
+  {
+   "path": ".godot/imported/horns.png-67d2f8cc31400d95c13ea4b29e6ad1fb.ctex",
+   "offset": 5832068,
+   "size": 2816
+  },
+  {
+   "path": ".godot/imported/horns.png-67d2f8cc31400d95c13ea4b29e6ad1fb.md5",
+   "offset": 5834884,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/hurt.wav-110ce77c529d3683dd2fcf0015442e6b.md5",
+   "offset": 5834975,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/hurt.wav-110ce77c529d3683dd2fcf0015442e6b.sample",
+   "offset": 5835066,
+   "size": 89715
+  },
+  {
+   "path": ".godot/imported/ice.png-8365179ead7d21954c6cb1f834d53a29.ctex",
+   "offset": 5924781,
+   "size": 2664
+  },
+  {
+   "path": ".godot/imported/ice.png-8365179ead7d21954c6cb1f834d53a29.md5",
+   "offset": 5927445,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/ice_particle_white.png-c6dc26ec25ab547dd92d19be40f45c91.ctex",
+   "offset": 5927536,
+   "size": 324
+  },
+  {
+   "path": ".godot/imported/ice_particle_white.png-c6dc26ec25ab547dd92d19be40f45c91.md5",
+   "offset": 5927860,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.ctex",
+   "offset": 5927951,
+   "size": 3870
+  },
+  {
+   "path": ".godot/imported/icon.png-487276ed1e3a0c39cad0279d744ee560.md5",
+   "offset": 5931821,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/information.svg-a86f7e40424743058b818afcfd1d28cf.ctex",
+   "offset": 5931912,
+   "size": 1258
+  },
+  {
+   "path": ".godot/imported/information.svg-a86f7e40424743058b818afcfd1d28cf.md5",
+   "offset": 5933170,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/inter_variable.ttf-4e1172208550fa9ebdb1abfc91242a9f.fontdata",
+   "offset": 5933261,
+   "size": 503749
+  },
+  {
+   "path": ".godot/imported/inter_variable.ttf-4e1172208550fa9ebdb1abfc91242a9f.md5",
+   "offset": 6437010,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/invisible_wall.png-ac0c3eda646880bf19356bf929de06f0.ctex",
+   "offset": 6437101,
+   "size": 728
+  },
+  {
+   "path": ".godot/imported/invisible_wall.png-ac0c3eda646880bf19356bf929de06f0.md5",
+   "offset": 6437829,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/island_2.png-2c3ed8c321b44d9b38e3066f7993a146.ctex",
+   "offset": 6437920,
+   "size": 674
+  },
+  {
+   "path": ".godot/imported/island_2.png-2c3ed8c321b44d9b38e3066f7993a146.md5",
+   "offset": 6438594,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/island_3.png-17b7c370143aecb4a295f99c41fe90ee.ctex",
+   "offset": 6438685,
+   "size": 420
+  },
+  {
+   "path": ".godot/imported/island_3.png-17b7c370143aecb4a295f99c41fe90ee.md5",
+   "offset": 6439105,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/Jaw.png-20ee8f9edf87580f83314fda0a0057dd.ctex",
+   "offset": 6439196,
+   "size": 1062
+  },
+  {
+   "path": ".godot/imported/Jaw.png-20ee8f9edf87580f83314fda0a0057dd.md5",
+   "offset": 6440258,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/kill.wav-9aff87f413046297902d81817566ff9c.md5",
+   "offset": 6440349,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/kill.wav-9aff87f413046297902d81817566ff9c.sample",
+   "offset": 6440440,
+   "size": 30895
+  },
+  {
+   "path": ".godot/imported/laser.wav-49e92b49ba8d97b1a379f41590f25d40.md5",
+   "offset": 6471335,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/laser.wav-49e92b49ba8d97b1a379f41590f25d40.sample",
+   "offset": 6471426,
+   "size": 24479
+  },
+  {
+   "path": ".godot/imported/lightning.png-83c3769f330febfc1f93bb7dea568842.ctex",
+   "offset": 6495905,
+   "size": 2368
+  },
+  {
+   "path": ".godot/imported/lightning.png-83c3769f330febfc1f93bb7dea568842.md5",
+   "offset": 6498273,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/lock.svg-1500030e3cba66593df28e24a4f8b89c.ctex",
+   "offset": 6498364,
+   "size": 574
+  },
+  {
+   "path": ".godot/imported/lock.svg-1500030e3cba66593df28e24a4f8b89c.md5",
+   "offset": 6498938,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/locked.svg-ea875e0b5347765aea3ab43442a21173.ctex",
+   "offset": 6499029,
+   "size": 790
+  },
+  {
+   "path": ".godot/imported/locked.svg-ea875e0b5347765aea3ab43442a21173.md5",
+   "offset": 6499819,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/Montserrat-ExtraBold.ttf-740a2bd5d584091b0ee3f10bd6f6813d.fontdata",
+   "offset": 6499910,
+   "size": 132789
+  },
+  {
+   "path": ".godot/imported/Montserrat-ExtraBold.ttf-740a2bd5d584091b0ee3f10bd6f6813d.md5",
+   "offset": 6632699,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/montserrat_variable.ttf-de0072878fb3f1627406d7ee78a2a1de.fontdata",
+   "offset": 6632790,
+   "size": 323556
+  },
+  {
+   "path": ".godot/imported/montserrat_variable.ttf-de0072878fb3f1627406d7ee78a2a1de.md5",
+   "offset": 6956346,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/mouse_texture.png-0dc4e956e91f86e3b1fb8006bda637cf.ctex",
+   "offset": 6956437,
+   "size": 4626
+  },
+  {
+   "path": ".godot/imported/mouse_texture.png-0dc4e956e91f86e3b1fb8006bda637cf.md5",
+   "offset": 6961063,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/mukta_bold.ttf-7a9485631c1973c68e8b9b5c64c74887.fontdata",
+   "offset": 6961154,
+   "size": 252972
+  },
+  {
+   "path": ".godot/imported/mukta_bold.ttf-7a9485631c1973c68e8b9b5c64c74887.md5",
+   "offset": 7214126,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/mukta_semibold.ttf-66cfddd987aa85b05443ed4ea5dceeb0.fontdata",
+   "offset": 7214217,
+   "size": 248708
+  },
+  {
+   "path": ".godot/imported/mukta_semibold.ttf-66cfddd987aa85b05443ed4ea5dceeb0.md5",
+   "offset": 7462925,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/nathan.png-4277e6d06d0fea1211e775d7ec8b078d.ctex",
+   "offset": 7463016,
+   "size": 127008
+  },
+  {
+   "path": ".godot/imported/nathan.png-4277e6d06d0fea1211e775d7ec8b078d.md5",
+   "offset": 7590024,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/nose.png-ae3e21301f2b277b3c90f4a00b99b958.ctex",
+   "offset": 7590115,
+   "size": 246
+  },
+  {
+   "path": ".godot/imported/nose.png-ae3e21301f2b277b3c90f4a00b99b958.md5",
+   "offset": 7590361,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/noto_sans_ja_bold.ttf-88e1b4266f12cb9da0eb807ce9d483d1.fontdata",
+   "offset": 7590452,
+   "size": 4031754
+  },
+  {
+   "path": ".godot/imported/noto_sans_ja_bold.ttf-88e1b4266f12cb9da0eb807ce9d483d1.md5",
+   "offset": 11622206,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/noto_sans_ja_bold.ttf-bd071ff220c9239ba6c280401abd2441.fontdata",
+   "offset": 11622297,
+   "size": 4031754
+  },
+  {
+   "path": ".godot/imported/noto_sans_ja_bold.ttf-bd071ff220c9239ba6c280401abd2441.md5",
+   "offset": 15654051,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/noto_sans_ja_regular.ttf-58bcf66302586e13e0ea941607d2d965.fontdata",
+   "offset": 15654142,
+   "size": 3997247
+  },
+  {
+   "path": ".godot/imported/noto_sans_ja_regular.ttf-58bcf66302586e13e0ea941607d2d965.md5",
+   "offset": 19651389,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/noto_sans_ja_regular.ttf-7d3eda32813c664da9f4bbbe9c3a6118.fontdata",
+   "offset": 19651480,
+   "size": 3997247
+  },
+  {
+   "path": ".godot/imported/noto_sans_ja_regular.ttf-7d3eda32813c664da9f4bbbe9c3a6118.md5",
+   "offset": 23648727,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/open_sans.ttf-5c39256d03d7075b310d9f5388c24510.fontdata",
+   "offset": 23648818,
+   "size": 86521
+  },
+  {
+   "path": ".godot/imported/open_sans.ttf-5c39256d03d7075b310d9f5388c24510.md5",
+   "offset": 23735339,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/open_sans_bold.ttf-68af96632df192d97e4d45c7045c4850.fontdata",
+   "offset": 23735430,
+   "size": 85136
+  },
+  {
+   "path": ".godot/imported/open_sans_bold.ttf-68af96632df192d97e4d45c7045c4850.md5",
+   "offset": 23820566,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/open_sans_bold_italic.ttf-b30726ae530f8fed8ec245b25518baa5.fontdata",
+   "offset": 23820657,
+   "size": 88877
+  },
+  {
+   "path": ".godot/imported/open_sans_bold_italic.ttf-b30726ae530f8fed8ec245b25518baa5.md5",
+   "offset": 23909534,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/open_sans_italic.ttf-dfa050bb32c39e5527e7dc266aca6b06.fontdata",
+   "offset": 23909625,
+   "size": 90752
+  },
+  {
+   "path": ".godot/imported/open_sans_italic.ttf-dfa050bb32c39e5527e7dc266aca6b06.md5",
+   "offset": 24000377,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pain_01.wav-a50558cb70aa9ea5c31e847f8b9ca014.md5",
+   "offset": 24000468,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pain_01.wav-a50558cb70aa9ea5c31e847f8b9ca014.sample",
+   "offset": 24000559,
+   "size": 271939
+  },
+  {
+   "path": ".godot/imported/pain_02.wav-f4829534dd127641c4a85c99a891d13f.md5",
+   "offset": 24272498,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pain_02.wav-f4829534dd127641c4a85c99a891d13f.sample",
+   "offset": 24272589,
+   "size": 291331
+  },
+  {
+   "path": ".godot/imported/pain_03.wav-872f4d591f394ef14ccd3eb884caf725.md5",
+   "offset": 24563920,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pain_03.wav-872f4d591f394ef14ccd3eb884caf725.sample",
+   "offset": 24564011,
+   "size": 252755
+  },
+  {
+   "path": ".godot/imported/pain_04.wav-fc7a99977febe2198b9fbeb4395c5e54.md5",
+   "offset": 24816766,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pain_04.wav-fc7a99977febe2198b9fbeb4395c5e54.sample",
+   "offset": 24816857,
+   "size": 267611
+  },
+  {
+   "path": ".godot/imported/pain_05.wav-3672e590e87cbe677d504cadea803b8a.md5",
+   "offset": 25084468,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pain_05.wav-3672e590e87cbe677d504cadea803b8a.sample",
+   "offset": 25084559,
+   "size": 265359
+  },
+  {
+   "path": ".godot/imported/pattern_bottom.svg-8210714916222f95db190725c7bb2619.ctex",
+   "offset": 25349918,
+   "size": 36882
+  },
+  {
+   "path": ".godot/imported/pattern_bottom.svg-8210714916222f95db190725c7bb2619.md5",
+   "offset": 25386800,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pattern_top.svg-4daa84e85c076bf4df1f95f034d63034.ctex",
+   "offset": 25386891,
+   "size": 44918
+  },
+  {
+   "path": ".godot/imported/pattern_top.svg-4daa84e85c076bf4df1f95f034d63034.md5",
+   "offset": 25431809,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pickup_fire.png-b17a32e9a0e68a6199059cebb5397970.ctex",
+   "offset": 25431900,
+   "size": 2462
+  },
+  {
+   "path": ".godot/imported/pickup_fire.png-b17a32e9a0e68a6199059cebb5397970.md5",
+   "offset": 25434362,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pickup_fire.wav-87421d996b4948f7d71a755cf94cb2aa.md5",
+   "offset": 25434453,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pickup_fire.wav-87421d996b4948f7d71a755cf94cb2aa.sample",
+   "offset": 25434544,
+   "size": 199527
+  },
+  {
+   "path": ".godot/imported/pickup_health.png-e28270205df02d9d5bea7bfcb6063ffb.ctex",
+   "offset": 25634071,
+   "size": 2550
+  },
+  {
+   "path": ".godot/imported/pickup_health.png-e28270205df02d9d5bea7bfcb6063ffb.md5",
+   "offset": 25636621,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pickup_health.wav-ee490aba43ad603da880b805d9deab0e.md5",
+   "offset": 25636712,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pickup_health.wav-ee490aba43ad603da880b805d9deab0e.sample",
+   "offset": 25636803,
+   "size": 462823
+  },
+  {
+   "path": ".godot/imported/pickup_ice.png-29994485e76f1db1626e4cfab40abd6c.ctex",
+   "offset": 26099626,
+   "size": 2154
+  },
+  {
+   "path": ".godot/imported/pickup_ice.png-29994485e76f1db1626e4cfab40abd6c.md5",
+   "offset": 26101780,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pickup_ice.wav-f412966db9e97a6c088650829a79be82.md5",
+   "offset": 26101871,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pickup_ice.wav-f412966db9e97a6c088650829a79be82.sample",
+   "offset": 26101962,
+   "size": 484499
+  },
+  {
+   "path": ".godot/imported/pickup_lightning.png-3bbf9a887d4d84c81ef3c04dd3c17f5e.ctex",
+   "offset": 26586461,
+   "size": 1984
+  },
+  {
+   "path": ".godot/imported/pickup_lightning.png-3bbf9a887d4d84c81ef3c04dd3c17f5e.md5",
+   "offset": 26588445,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pickup_lightning.wav-54c38a8144c67c0e4e31cfdfa2d33db2.md5",
+   "offset": 26588536,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/pickup_lightning.wav-54c38a8144c67c0e4e31cfdfa2d33db2.sample",
+   "offset": 26588627,
+   "size": 281971
+  },
+  {
+   "path": ".godot/imported/poppins_bold.ttf-3d8105333ad28e1b936bf88729abcb01.fontdata",
+   "offset": 26870598,
+   "size": 91264
+  },
+  {
+   "path": ".godot/imported/poppins_bold.ttf-3d8105333ad28e1b936bf88729abcb01.md5",
+   "offset": 26961862,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/poppins_extrabold.ttf-3151637293a31c45608ab61033d45ce9.fontdata",
+   "offset": 26961953,
+   "size": 91018
+  },
+  {
+   "path": ".godot/imported/poppins_extrabold.ttf-3151637293a31c45608ab61033d45ce9.md5",
+   "offset": 27052971,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/poppins_italic.ttf-acec85489668d86205880231e06ce363.fontdata",
+   "offset": 27053062,
+   "size": 110448
+  },
+  {
+   "path": ".godot/imported/poppins_italic.ttf-acec85489668d86205880231e06ce363.md5",
+   "offset": 27163510,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/poppins_medium.ttf-4dd56e6abf4677cf8972cb51a5e877c3.fontdata",
+   "offset": 27163601,
+   "size": 92347
+  },
+  {
+   "path": ".godot/imported/poppins_medium.ttf-4dd56e6abf4677cf8972cb51a5e877c3.md5",
+   "offset": 27255948,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/poppins_regular.ttf-3d430da449ee1abc7f5114c7e501b931.fontdata",
+   "offset": 27256039,
+   "size": 93444
+  },
+  {
+   "path": ".godot/imported/poppins_regular.ttf-3d430da449ee1abc7f5114c7e501b931.md5",
+   "offset": 27349483,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/powerup.wav-0b639bfddc48f84fd926c9c54f27ea07.md5",
+   "offset": 27349574,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/powerup.wav-0b639bfddc48f84fd926c9c54f27ea07.sample",
+   "offset": 27349665,
+   "size": 18795
+  },
+  {
+   "path": ".godot/imported/reload.svg-46794e682e5d73102ddb0fb79d16e098.ctex",
+   "offset": 27368460,
+   "size": 976
+  },
+  {
+   "path": ".godot/imported/reload.svg-46794e682e5d73102ddb0fb79d16e098.md5",
+   "offset": 27369436,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/reset.svg-5d60dd92e618e19f4c474ee5e2be2763.ctex",
+   "offset": 27369527,
+   "size": 606
+  },
+  {
+   "path": ".godot/imported/reset.svg-5d60dd92e618e19f4c474ee5e2be2763.md5",
+   "offset": 27370133,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/rocks_sword.png-df171c83059bbe5c2c4c425f0e37ee00.ctex",
+   "offset": 27370224,
+   "size": 10496
+  },
+  {
+   "path": ".godot/imported/rocks_sword.png-df171c83059bbe5c2c4c425f0e37ee00.md5",
+   "offset": 27380720,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/select_fire.wav-6b8b0608f1438dd614b62daae06fce3b.md5",
+   "offset": 27380811,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/select_fire.wav-6b8b0608f1438dd614b62daae06fce3b.sample",
+   "offset": 27380902,
+   "size": 81827
+  },
+  {
+   "path": ".godot/imported/select_ice.wav-f83709d0c4b60941929da113bc5bed3d.md5",
+   "offset": 27462729,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/select_ice.wav-f83709d0c4b60941929da113bc5bed3d.sample",
+   "offset": 27462820,
+   "size": 126583
+  },
+  {
+   "path": ".godot/imported/select_lightning.wav-131031f3216e3926ca0892f9f3a30584.md5",
+   "offset": 27589403,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/select_lightning.wav-131031f3216e3926ca0892f9f3a30584.sample",
+   "offset": 27589494,
+   "size": 112135
+  },
+  {
+   "path": ".godot/imported/shadow_circle.png-447d5f764a0c81b4d3965bdd19cf9777.ctex",
+   "offset": 27701629,
+   "size": 994
+  },
+  {
+   "path": ".godot/imported/shadow_circle.png-447d5f764a0c81b4d3965bdd19cf9777.md5",
+   "offset": 27702623,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/shield_active.png-090945b3768920a6f6f568087e8af3ce.ctex",
+   "offset": 27702714,
+   "size": 5070
+  },
+  {
+   "path": ".godot/imported/shield_active.png-090945b3768920a6f6f568087e8af3ce.md5",
+   "offset": 27707784,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/shield_inactive.png-a2f40eb971cae9fe8cec2108191821d2.ctex",
+   "offset": 27707875,
+   "size": 6262
+  },
+  {
+   "path": ".godot/imported/shield_inactive.png-a2f40eb971cae9fe8cec2108191821d2.md5",
+   "offset": 27714137,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/shoot_fire.wav-06e44c21480437a4506e523918267d5e.md5",
+   "offset": 27714228,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/shoot_fire.wav-06e44c21480437a4506e523918267d5e.sample",
+   "offset": 27714319,
+   "size": 73251
+  },
+  {
+   "path": ".godot/imported/shoot_ice.wav-2bcaa1829e5074719c38e0d5e2b6054f.md5",
+   "offset": 27787570,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/shoot_ice.wav-2bcaa1829e5074719c38e0d5e2b6054f.sample",
+   "offset": 27787661,
+   "size": 423955
+  },
+  {
+   "path": ".godot/imported/shoot_lightning.wav-ff213f1beaf43972dd92c467fb9501e1.md5",
+   "offset": 28211616,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/shoot_lightning.wav-ff213f1beaf43972dd92c467fb9501e1.sample",
+   "offset": 28211707,
+   "size": 371259
+  },
+  {
+   "path": ".godot/imported/sky_blue.png-833af0ac5812a9cddcd0ad10d3f00e78.ctex",
+   "offset": 28582966,
+   "size": 94
+  },
+  {
+   "path": ".godot/imported/sky_blue.png-833af0ac5812a9cddcd0ad10d3f00e78.md5",
+   "offset": 28583060,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/sparkle_2.png-6565c005b450342ed9018498303b83c2.ctex",
+   "offset": 28583151,
+   "size": 688
+  },
+  {
+   "path": ".godot/imported/sparkle_2.png-6565c005b450342ed9018498303b83c2.md5",
+   "offset": 28583839,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/speech_bubble_tail.svg-00c3bc6a8fd2949e0ffe263ac8cefac3.ctex",
+   "offset": 28583930,
+   "size": 190
+  },
+  {
+   "path": ".godot/imported/speech_bubble_tail.svg-00c3bc6a8fd2949e0ffe263ac8cefac3.md5",
+   "offset": 28584120,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/star_sprite.png-67c4f4a47e15781f1da1e22b6d6e1f36.ctex",
+   "offset": 28584211,
+   "size": 480
+  },
+  {
+   "path": ".godot/imported/star_sprite.png-67c4f4a47e15781f1da1e22b6d6e1f36.md5",
+   "offset": 28584691,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/statue_hammer.png-28cbd7ba41870e08274d980397f56373.ctex",
+   "offset": 28584782,
+   "size": 13988
+  },
+  {
+   "path": ".godot/imported/statue_hammer.png-28cbd7ba41870e08274d980397f56373.md5",
+   "offset": 28598770,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/statue_ruin.png-1e1c7e6700e3f6dbb66187b730eba13b.ctex",
+   "offset": 28598861,
+   "size": 12508
+  },
+  {
+   "path": ".godot/imported/statue_ruin.png-1e1c7e6700e3f6dbb66187b730eba13b.md5",
+   "offset": 28611369,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/sword_active.png-65945c9f3c330fa51991d57e7a32b8a5.ctex",
+   "offset": 28611460,
+   "size": 4530
+  },
+  {
+   "path": ".godot/imported/sword_active.png-65945c9f3c330fa51991d57e7a32b8a5.md5",
+   "offset": 28615990,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/sword_inactive.png-3b043b9a653e0b86a349b7f0de4acb64.ctex",
+   "offset": 28616081,
+   "size": 3684
+  },
+  {
+   "path": ".godot/imported/sword_inactive.png-3b043b9a653e0b86a349b7f0de4acb64.md5",
+   "offset": 28619765,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/task_checkbox.svg-e8c40f85a3135314552da5d3631a4018.ctex",
+   "offset": 28619856,
+   "size": 288
+  },
+  {
+   "path": ".godot/imported/task_checkbox.svg-e8c40f85a3135314552da5d3631a4018.md5",
+   "offset": 28620144,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/tileset_bridges.png-814317f02288d6fe0885036c3e05ae51.ctex",
+   "offset": 28620235,
+   "size": 7904
+  },
+  {
+   "path": ".godot/imported/tileset_bridges.png-814317f02288d6fe0885036c3e05ae51.md5",
+   "offset": 28628139,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/tour_checkbox.svg-255367ce99be974180389bf5be4330f7.ctex",
+   "offset": 28628230,
+   "size": 336
+  },
+  {
+   "path": ".godot/imported/tour_checkbox.svg-255367ce99be974180389bf5be4330f7.md5",
+   "offset": 28628566,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/unlocked.svg-6272029aa4ebc72a874f2be59f5d2f9f.ctex",
+   "offset": 28628657,
+   "size": 594
+  },
+  {
+   "path": ".godot/imported/unlocked.svg-6272029aa4ebc72a874f2be59f5d2f9f.md5",
+   "offset": 28629251,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/warning.svg-5c5f4c6cd11a66fb42264c8882b6f880.ctex",
+   "offset": 28629342,
+   "size": 1630
+  },
+  {
+   "path": ".godot/imported/warning.svg-5c5f4c6cd11a66fb42264c8882b6f880.md5",
+   "offset": 28630972,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/white_circle.png-7da47ad0ae1f8bb57aeb638056e86923.ctex",
+   "offset": 28631063,
+   "size": 462
+  },
+  {
+   "path": ".godot/imported/white_circle.png-7da47ad0ae1f8bb57aeb638056e86923.md5",
+   "offset": 28631525,
+   "size": 91
+  },
+  {
+   "path": ".godot/imported/wind_fx.png-d06566d9c6e036a6ad07ab155d650f41.ctex",
+   "offset": 28631616,
+   "size": 116
+  },
+  {
+   "path": ".godot/imported/wind_fx.png-d06566d9c6e036a6ad07ab155d650f41.md5",
+   "offset": 28631732,
+   "size": 91
+  },
+  {
+   "path": ".godot/uid_cache.bin",
+   "offset": 28631823,
+   "size": 23751
+  },
+  {
+   "path": "addons/gdquest_editor_interface/editor_interface_access.gd",
+   "offset": 28655574,
+   "size": 13463
+  },
+  {
+   "path": "addons/gdquest_editor_interface/editor_interface_access.gd.uid",
+   "offset": 28669037,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_about.gd",
+   "offset": 28669057,
+   "size": 342
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_about.gd.uid",
+   "offset": 28669399,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_build_profiles.gd",
+   "offset": 28669419,
+   "size": 372
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_build_profiles.gd.uid",
+   "offset": 28669791,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_create_object.gd",
+   "offset": 28669810,
+   "size": 5428
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_create_object.gd.uid",
+   "offset": 28675238,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_dependency_errors.gd",
+   "offset": 28675257,
+   "size": 366
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_dependency_errors.gd.uid",
+   "offset": 28675623,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_editor_settings.gd",
+   "offset": 28675643,
+   "size": 363
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_editor_settings.gd.uid",
+   "offset": 28676006,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_export_templates.gd",
+   "offset": 28676026,
+   "size": 366
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_export_templates.gd.uid",
+   "offset": 28676392,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_fbx_importer.gd",
+   "offset": 28676412,
+   "size": 407
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_fbx_importer.gd.uid",
+   "offset": 28676819,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_feature_profiles.gd",
+   "offset": 28676839,
+   "size": 378
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_feature_profiles.gd.uid",
+   "offset": 28677217,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_import_audio.gd",
+   "offset": 28677236,
+   "size": 396
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_import_audio.gd.uid",
+   "offset": 28677632,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_import_font.gd",
+   "offset": 28677652,
+   "size": 396
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_import_font.gd.uid",
+   "offset": 28678048,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_import_scene.gd",
+   "offset": 28678067,
+   "size": 1361
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_import_scene.gd.uid",
+   "offset": 28679428,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_orphan_resources.gd",
+   "offset": 28679448,
+   "size": 366
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_orphan_resources.gd.uid",
+   "offset": 28679814,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_project_export.gd",
+   "offset": 28679834,
+   "size": 360
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_project_export.gd.uid",
+   "offset": 28680194,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_project_settings.gd",
+   "offset": 28680214,
+   "size": 3257
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/dialogs/dialogs_project_settings.gd.uid",
+   "offset": 28683471,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_animation.gd",
+   "offset": 28683491,
+   "size": 556
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_animation.gd.uid",
+   "offset": 28684047,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_animation_tree.gd",
+   "offset": 28684067,
+   "size": 556
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_animation_tree.gd.uid",
+   "offset": 28684623,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_audio.gd",
+   "offset": 28684642,
+   "size": 557
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_audio.gd.uid",
+   "offset": 28685199,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_debugger.gd",
+   "offset": 28685218,
+   "size": 436
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_debugger.gd.uid",
+   "offset": 28685654,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_filesystem.gd",
+   "offset": 28685674,
+   "size": 1139
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_filesystem.gd.uid",
+   "offset": 28686813,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_gridmap.gd",
+   "offset": 28686832,
+   "size": 1243
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_gridmap.gd.uid",
+   "offset": 28688075,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_groups.gd",
+   "offset": 28688095,
+   "size": 1460
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_groups.gd.uid",
+   "offset": 28689555,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_history.gd",
+   "offset": 28689575,
+   "size": 355
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_history.gd.uid",
+   "offset": 28689930,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_import.gd",
+   "offset": 28689950,
+   "size": 1238
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_import.gd.uid",
+   "offset": 28691188,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_inspector.gd",
+   "offset": 28691208,
+   "size": 1523
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_inspector.gd.uid",
+   "offset": 28692731,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_output.gd",
+   "offset": 28692750,
+   "size": 4564
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_output.gd.uid",
+   "offset": 28697314,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_polygon.gd",
+   "offset": 28697333,
+   "size": 1240
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_polygon.gd.uid",
+   "offset": 28698573,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_replication.gd",
+   "offset": 28698593,
+   "size": 1255
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_replication.gd.uid",
+   "offset": 28699848,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_resource_preloader.gd",
+   "offset": 28699868,
+   "size": 1274
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_resource_preloader.gd.uid",
+   "offset": 28701142,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_scene.gd",
+   "offset": 28701162,
+   "size": 10024
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_scene.gd.uid",
+   "offset": 28711186,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_search.gd",
+   "offset": 28711206,
+   "size": 777
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_search.gd.uid",
+   "offset": 28711983,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_shader.gd",
+   "offset": 28712002,
+   "size": 1245
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_shader.gd.uid",
+   "offset": 28713247,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_shader_file.gd",
+   "offset": 28713266,
+   "size": 1303
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_shader_file.gd.uid",
+   "offset": 28714569,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_signals.gd",
+   "offset": 28714589,
+   "size": 6569
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_signals.gd.uid",
+   "offset": 28721158,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_spriteframes.gd",
+   "offset": 28721178,
+   "size": 13778
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_spriteframes.gd.uid",
+   "offset": 28734956,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_theme.gd",
+   "offset": 28734975,
+   "size": 412
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_theme.gd.uid",
+   "offset": 28735387,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_tilemap.gd",
+   "offset": 28735407,
+   "size": 13630
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_tilemap.gd.uid",
+   "offset": 28749037,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_tileset.gd",
+   "offset": 28749057,
+   "size": 13122
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/docks/docks_tileset.gd.uid",
+   "offset": 28762179,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_general.gd",
+   "offset": 28762199,
+   "size": 10683
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_general.gd.uid",
+   "offset": 28772882,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_main_view.gd",
+   "offset": 28772901,
+   "size": 2171
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_main_view.gd.uid",
+   "offset": 28775072,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_menu_bar.gd",
+   "offset": 28775091,
+   "size": 3433
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_menu_bar.gd.uid",
+   "offset": 28778524,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_run_bar.gd",
+   "offset": 28778543,
+   "size": 3272
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_run_bar.gd.uid",
+   "offset": 28781815,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_scene_tabs.gd",
+   "offset": 28781835,
+   "size": 1169
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_scene_tabs.gd.uid",
+   "offset": 28783004,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_widgets.gd",
+   "offset": 28783024,
+   "size": 927
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/editor_widgets.gd.uid",
+   "offset": 28783951,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/main_views/asset_library.gd",
+   "offset": 28783970,
+   "size": 455
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/main_views/asset_library.gd.uid",
+   "offset": 28784425,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/main_views/canvas_item_editor.gd",
+   "offset": 28784445,
+   "size": 15860
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/main_views/canvas_item_editor.gd.uid",
+   "offset": 28800305,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/main_views/game_view.gd",
+   "offset": 28800325,
+   "size": 621
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/main_views/game_view.gd.uid",
+   "offset": 28800946,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/main_views/node_3d_editor.gd",
+   "offset": 28800966,
+   "size": 12314
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/main_views/node_3d_editor.gd.uid",
+   "offset": 28813280,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/main_views/script_editor.gd",
+   "offset": 28813300,
+   "size": 12319
+  },
+  {
+   "path": "addons/gdquest_editor_interface/library/main_views/script_editor.gd.uid",
+   "offset": 28825619,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/LICENSE",
+   "offset": 28825639,
+   "size": 35149
+  },
+  {
+   "path": "addons/gdquest_editor_interface/utils/eia_enums.gd",
+   "offset": 28860788,
+   "size": 18262
+  },
+  {
+   "path": "addons/gdquest_editor_interface/utils/eia_enums.gd.uid",
+   "offset": 28879050,
+   "size": 20
+  },
+  {
+   "path": "addons/gdquest_editor_interface/utils/eia_resolver.gd",
+   "offset": 28879070,
+   "size": 14070
+  },
+  {
+   "path": "addons/gdquest_editor_interface/utils/eia_resolver.gd.uid",
+   "offset": 28893140,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/utils/eia_resolver_types.gd",
+   "offset": 28893159,
+   "size": 15493
+  },
+  {
+   "path": "addons/gdquest_editor_interface/utils/eia_resolver_types.gd.uid",
+   "offset": 28908652,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_editor_interface/utils/eia_resolver_utils.gd",
+   "offset": 28908671,
+   "size": 7318
+  },
+  {
+   "path": "addons/gdquest_editor_interface/utils/eia_resolver_utils.gd.uid",
+   "offset": 28915989,
+   "size": 19
+  },
+  {
+   "path": "addons/gdquest_theme_utils/fallback/noto_sans_ja_bold.ttf",
+   "offset": 28916008,
+   "size": 5727828
+  },
+  {
+   "path": "addons/gdquest_theme_utils/fallback/noto_sans_ja_bold.ttf.import",
+   "offset": 34643836,
+   "size": 812
+  },
+  {
+   "path": "addons/gdquest_theme_utils/fallback/noto_sans_ja_regular.ttf",
+   "offset": 34644648,
+   "size": 5732824
+  },
+  {
+   "path": "addons/gdquest_theme_utils/fallback/noto_sans_ja_regular.ttf.import",
+   "offset": 40377472,
+   "size": 821
+  },
+  {
+   "path": "addons/gdquest_theme_utils/README.md",
+   "offset": 40378293,
+   "size": 924
+  },
+  {
+   "path": "addons/gdquest_theme_utils/theme_utils.gd",
+   "offset": 40379217,
+   "size": 10249
+  },
+  {
+   "path": "addons/gdquest_theme_utils/theme_utils.gd.uid",
+   "offset": 40389466,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/fallback/noto_sans_ja_bold.ttf",
+   "offset": 40389486,
+   "size": 5727828
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/fallback/noto_sans_ja_bold.ttf.import",
+   "offset": 46117314,
+   "size": 817
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/fallback/noto_sans_ja_regular.ttf",
+   "offset": 46118131,
+   "size": 5732824
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/fallback/noto_sans_ja_regular.ttf.import",
+   "offset": 51850955,
+   "size": 826
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/hasklug_nerd_mono.otf",
+   "offset": 51851781,
+   "size": 3379568
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/hasklug_nerd_mono.otf.import",
+   "offset": 55231349,
+   "size": 808
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/inter_bold.tres",
+   "offset": 55232157,
+   "size": 309
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/inter_regular.tres",
+   "offset": 55232466,
+   "size": 252
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/inter_semibold.tres",
+   "offset": 55232718,
+   "size": 308
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/inter_variable.ttf",
+   "offset": 55233026,
+   "size": 874708
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/inter_variable.ttf.import",
+   "offset": 56107734,
+   "size": 799
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/montserrat_black.tres",
+   "offset": 56108533,
+   "size": 298
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/montserrat_bold_short.tres",
+   "offset": 56108831,
+   "size": 317
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/montserrat_variable.ttf",
+   "offset": 56109148,
+   "size": 688600
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/montserrat_variable.ttf.import",
+   "offset": 56797748,
+   "size": 814
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/mukta_bold.ttf",
+   "offset": 56798562,
+   "size": 414012
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/mukta_bold.ttf.import",
+   "offset": 57212574,
+   "size": 787
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/mukta_semibold.ttf",
+   "offset": 57213361,
+   "size": 406800
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/mukta_semibold.ttf.import",
+   "offset": 57620161,
+   "size": 799
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/open_sans.ttf",
+   "offset": 57620960,
+   "size": 130832
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/open_sans.ttf.import",
+   "offset": 57751792,
+   "size": 784
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/open_sans_bold.ttf",
+   "offset": 57752576,
+   "size": 130860
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/open_sans_bold.ttf.import",
+   "offset": 57883436,
+   "size": 799
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/open_sans_bold_italic.ttf",
+   "offset": 57884235,
+   "size": 136360
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/open_sans_bold_italic.ttf.import",
+   "offset": 58020595,
+   "size": 820
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/open_sans_italic.ttf",
+   "offset": 58021415,
+   "size": 136604
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/open_sans_italic.ttf.import",
+   "offset": 58158019,
+   "size": 805
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/poppins_bold.ttf",
+   "offset": 58158824,
+   "size": 153944
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/poppins_bold.ttf.import",
+   "offset": 58312768,
+   "size": 793
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/poppins_extrabold.ttf",
+   "offset": 58313561,
+   "size": 152764
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/poppins_extrabold.ttf.import",
+   "offset": 58466325,
+   "size": 808
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/poppins_italic.ttf",
+   "offset": 58467133,
+   "size": 182012
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/poppins_italic.ttf.import",
+   "offset": 58649145,
+   "size": 799
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/poppins_medium.ttf",
+   "offset": 58649944,
+   "size": 156520
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/poppins_medium.ttf.import",
+   "offset": 58806464,
+   "size": 799
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/poppins_regular.ttf",
+   "offset": 58807263,
+   "size": 158240
+  },
+  {
+   "path": "addons/godot_tours/assets/fonts/poppins_regular.ttf.import",
+   "offset": 58965503,
+   "size": 802
+  },
+  {
+   "path": "addons/godot_tours/assets/gdtour_theme.tres",
+   "offset": 58966305,
+   "size": 24898
+  },
+  {
+   "path": "addons/godot_tours/assets/guide_3d.gd",
+   "offset": 58991203,
+   "size": 1079
+  },
+  {
+   "path": "addons/godot_tours/assets/guide_3d.gd.uid",
+   "offset": 58992282,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/assets/guide_3d.tscn",
+   "offset": 58992301,
+   "size": 1056
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/campus_icon.svg",
+   "offset": 58993357,
+   "size": 893
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/campus_icon.svg.import",
+   "offset": 58994250,
+   "size": 1065
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/close.svg",
+   "offset": 58995315,
+   "size": 296
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/close.svg.import",
+   "offset": 58995611,
+   "size": 1048
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/copyright.svg",
+   "offset": 58996659,
+   "size": 969
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/copyright.svg.import",
+   "offset": 58997628,
+   "size": 1059
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/information.svg",
+   "offset": 58998687,
+   "size": 299
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/information.svg.import",
+   "offset": 58998986,
+   "size": 1066
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/lock.svg",
+   "offset": 59000052,
+   "size": 187
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/lock.svg.import",
+   "offset": 59000239,
+   "size": 1045
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/reload.svg",
+   "offset": 59001284,
+   "size": 162
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/reload.svg.import",
+   "offset": 59001446,
+   "size": 1051
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/warning.svg",
+   "offset": 59002497,
+   "size": 301
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/warning.svg.import",
+   "offset": 59002798,
+   "size": 1054
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/white_circle.png",
+   "offset": 59003852,
+   "size": 1096
+  },
+  {
+   "path": "addons/godot_tours/assets/icons/white_circle.png.import",
+   "offset": 59004948,
+   "size": 971
+  },
+  {
+   "path": "addons/godot_tours/assets/theme/button_base_style.tres",
+   "offset": 59005919,
+   "size": 136
+  },
+  {
+   "path": "addons/godot_tours/assets/theme/button_box_disabled_style.tres",
+   "offset": 59006055,
+   "size": 460
+  },
+  {
+   "path": "addons/godot_tours/assets/theme/button_box_style.tres",
+   "offset": 59006515,
+   "size": 442
+  },
+  {
+   "path": "addons/godot_tours/assets/theme/button_gdtour_style.tres",
+   "offset": 59006957,
+   "size": 379
+  },
+  {
+   "path": "addons/godot_tours/assets/theme/button_gray_style.tres",
+   "offset": 59007336,
+   "size": 136
+  },
+  {
+   "path": "addons/godot_tours/assets/theme/button_icon_style.tres",
+   "offset": 59007472,
+   "size": 188
+  },
+  {
+   "path": "addons/godot_tours/assets/theme/button_next_style.tres",
+   "offset": 59007660,
+   "size": 442
+  },
+  {
+   "path": "addons/godot_tours/assets/theme/clear_style.tres",
+   "offset": 59008102,
+   "size": 81
+  },
+  {
+   "path": "addons/godot_tours/bubble/assets/bookends/background_gradient.svg",
+   "offset": 59008183,
+   "size": 524
+  },
+  {
+   "path": "addons/godot_tours/bubble/assets/bookends/background_gradient.svg.import",
+   "offset": 59008707,
+   "size": 1099
+  },
+  {
+   "path": "addons/godot_tours/bubble/assets/bookends/pattern_bottom.svg",
+   "offset": 59009806,
+   "size": 6937
+  },
+  {
+   "path": "addons/godot_tours/bubble/assets/bookends/pattern_bottom.svg.import",
+   "offset": 59016743,
+   "size": 1085
+  },
+  {
+   "path": "addons/godot_tours/bubble/assets/bookends/pattern_top.svg",
+   "offset": 59017828,
+   "size": 6087
+  },
+  {
+   "path": "addons/godot_tours/bubble/assets/bookends/pattern_top.svg.import",
+   "offset": 59023915,
+   "size": 1076
+  },
+  {
+   "path": "addons/godot_tours/bubble/bubble_base.gd",
+   "offset": 59024991,
+   "size": 26025
+  },
+  {
+   "path": "addons/godot_tours/bubble/bubble_base.gd.uid",
+   "offset": 59051016,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/content/big_title.gd",
+   "offset": 59051036,
+   "size": 1346
+  },
+  {
+   "path": "addons/godot_tours/bubble/content/big_title.gd.uid",
+   "offset": 59052382,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/content/code_edit.tscn",
+   "offset": 59052402,
+   "size": 668
+  },
+  {
+   "path": "addons/godot_tours/bubble/content/rich_text_label.gd",
+   "offset": 59053070,
+   "size": 355
+  },
+  {
+   "path": "addons/godot_tours/bubble/content/rich_text_label.gd.uid",
+   "offset": 59053425,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/content/rich_text_label.tscn",
+   "offset": 59053445,
+   "size": 490
+  },
+  {
+   "path": "addons/godot_tours/bubble/content/texture_rect.gd",
+   "offset": 59053935,
+   "size": 528
+  },
+  {
+   "path": "addons/godot_tours/bubble/content/texture_rect.gd.uid",
+   "offset": 59054463,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/content/texture_rect.tscn",
+   "offset": 59054483,
+   "size": 386
+  },
+  {
+   "path": "addons/godot_tours/bubble/content/video_stream_player.tscn",
+   "offset": 59054869,
+   "size": 187
+  },
+  {
+   "path": "addons/godot_tours/bubble/default_bubble.gd",
+   "offset": 59055056,
+   "size": 50486
+  },
+  {
+   "path": "addons/godot_tours/bubble/default_bubble.gd.uid",
+   "offset": 59105542,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/default_bubble.tscn",
+   "offset": 59105562,
+   "size": 18297
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/bolt.png",
+   "offset": 59123859,
+   "size": 930
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/bolt.png.import",
+   "offset": 59124789,
+   "size": 955
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/eye_closed.png",
+   "offset": 59125744,
+   "size": 525
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/eye_closed.png.import",
+   "offset": 59126269,
+   "size": 973
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/eye_default.png",
+   "offset": 59127242,
+   "size": 1401
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/eye_default.png.import",
+   "offset": 59128643,
+   "size": 976
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/eye_frowned.png",
+   "offset": 59129619,
+   "size": 723
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/eye_frowned.png.import",
+   "offset": 59130342,
+   "size": 976
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/eyebrow_default.png",
+   "offset": 59131318,
+   "size": 381
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/eyebrow_default.png.import",
+   "offset": 59131699,
+   "size": 988
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/face.png",
+   "offset": 59132687,
+   "size": 3782
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/face.png.import",
+   "offset": 59136469,
+   "size": 955
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/gobot_mascot.png",
+   "offset": 59137424,
+   "size": 31453
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/gobot_mascot.png.import",
+   "offset": 59168877,
+   "size": 979
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/gobot_material.gdshader",
+   "offset": 59169856,
+   "size": 863
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/gobot_material.gdshader.uid",
+   "offset": 59170719,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/horns.png",
+   "offset": 59170738,
+   "size": 4103
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/horns.png.import",
+   "offset": 59174841,
+   "size": 958
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/Jaw.png",
+   "offset": 59175799,
+   "size": 1902
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/Jaw.png.import",
+   "offset": 59177701,
+   "size": 951
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/nose.png",
+   "offset": 59178652,
+   "size": 453
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/nose.png.import",
+   "offset": 59179105,
+   "size": 954
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/star_sprite.png",
+   "offset": 59180059,
+   "size": 713
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/assets/star_sprite.png.import",
+   "offset": 59180772,
+   "size": 976
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/gobot.gd",
+   "offset": 59181748,
+   "size": 10641
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/gobot.gd.uid",
+   "offset": 59192389,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/gobot.tscn",
+   "offset": 59192408,
+   "size": 29560
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/gobot_skin.gd",
+   "offset": 59221968,
+   "size": 7304
+  },
+  {
+   "path": "addons/godot_tours/bubble/gobot/gobot_skin.gd.uid",
+   "offset": 59229272,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/campus_footer.gd",
+   "offset": 59229292,
+   "size": 2594
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/campus_footer.gd.uid",
+   "offset": 59231886,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/campus_footer.tscn",
+   "offset": 59231906,
+   "size": 1699
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/confirm_drawer.gd",
+   "offset": 59233605,
+   "size": 1242
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/confirm_drawer.gd.uid",
+   "offset": 59234847,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/confirm_drawer.tscn",
+   "offset": 59234866,
+   "size": 2281
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/content_container.gd",
+   "offset": 59237147,
+   "size": 1446
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/content_container.gd.uid",
+   "offset": 59238593,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/content_container.tscn",
+   "offset": 59238613,
+   "size": 775
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/inform_drawer.gd",
+   "offset": 59239388,
+   "size": 861
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/inform_drawer.gd.uid",
+   "offset": 59240249,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/inform_drawer.tscn",
+   "offset": 59240269,
+   "size": 1996
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/message_drawer.gd",
+   "offset": 59242265,
+   "size": 2815
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/message_drawer.gd.uid",
+   "offset": 59245080,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/shrinkable_container.gd",
+   "offset": 59245100,
+   "size": 1281
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/shrinkable_container.gd.uid",
+   "offset": 59246381,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/layout/shrinkable_container.tscn",
+   "offset": 59246401,
+   "size": 752
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/check.svg",
+   "offset": 59247153,
+   "size": 596
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/check.svg.import",
+   "offset": 59247749,
+   "size": 1054
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/exclamation.svg",
+   "offset": 59248803,
+   "size": 249
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/exclamation.svg.import",
+   "offset": 59249052,
+   "size": 1073
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/locked.svg",
+   "offset": 59250125,
+   "size": 383
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/locked.svg.import",
+   "offset": 59250508,
+   "size": 1057
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/reset.svg",
+   "offset": 59251565,
+   "size": 1790
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/reset.svg.import",
+   "offset": 59253355,
+   "size": 1054
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/task_checkbox.svg",
+   "offset": 59254409,
+   "size": 416
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/task_checkbox.svg.import",
+   "offset": 59254825,
+   "size": 1078
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/tour_checkbox.svg",
+   "offset": 59255903,
+   "size": 409
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/tour_checkbox.svg.import",
+   "offset": 59256312,
+   "size": 1078
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/unlocked.svg",
+   "offset": 59257390,
+   "size": 406
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/assets/unlocked.svg.import",
+   "offset": 59257796,
+   "size": 1064
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/task_item.gd",
+   "offset": 59258860,
+   "size": 4928
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/task_item.gd.uid",
+   "offset": 59263788,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/task_item.tscn",
+   "offset": 59263808,
+   "size": 2889
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/tasks_container.gd",
+   "offset": 59266697,
+   "size": 1232
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/tasks_container.gd.uid",
+   "offset": 59267929,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/tasks_container.tscn",
+   "offset": 59267948,
+   "size": 555
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/tour_item.gd",
+   "offset": 59268503,
+   "size": 6213
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/tour_item.gd.uid",
+   "offset": 59274716,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/tour_item.tscn",
+   "offset": 59274736,
+   "size": 3607
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/tours_container.gd",
+   "offset": 59278343,
+   "size": 1846
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/tours_container.gd.uid",
+   "offset": 59280189,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/bubble/lists/tours_container.tscn",
+   "offset": 59280208,
+   "size": 555
+  },
+  {
+   "path": "addons/godot_tours/bubble/locale/id.po",
+   "offset": 59280763,
+   "size": 7496
+  },
+  {
+   "path": "addons/godot_tours/bubble/locale/ja.po",
+   "offset": 59288259,
+   "size": 666
+  },
+  {
+   "path": "addons/godot_tours/bubble/locale/locale.pot",
+   "offset": 59288925,
+   "size": 4787
+  },
+  {
+   "path": "addons/godot_tours/bubble/locale/ro.po",
+   "offset": 59293712,
+   "size": 3593
+  },
+  {
+   "path": "addons/godot_tours/bubble/tours_bubble.gd",
+   "offset": 59297305,
+   "size": 21296
+  },
+  {
+   "path": "addons/godot_tours/bubble/tours_bubble.gd.uid",
+   "offset": 59318601,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/bubble/tours_bubble.tscn",
+   "offset": 59318621,
+   "size": 11081
+  },
+  {
+   "path": "addons/godot_tours/campus/campus.gd",
+   "offset": 59329702,
+   "size": 58529
+  },
+  {
+   "path": "addons/godot_tours/campus/campus.gd.uid",
+   "offset": 59388231,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_api.gd",
+   "offset": 59388251,
+   "size": 13360
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_api.gd.uid",
+   "offset": 59401611,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_config.gd",
+   "offset": 59401631,
+   "size": 13696
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_config.gd.uid",
+   "offset": 59415327,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_locale.gd",
+   "offset": 59415347,
+   "size": 10082
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_locale.gd.uid",
+   "offset": 59425429,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/account_bar.gd",
+   "offset": 59425449,
+   "size": 7919
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/account_bar.gd.uid",
+   "offset": 59433368,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/campus_header.gd",
+   "offset": 59433388,
+   "size": 14311
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/campus_header.gd.uid",
+   "offset": 59447699,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/campus_hud.gd",
+   "offset": 59447719,
+   "size": 7612
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/campus_hud.gd.uid",
+   "offset": 59455331,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/campus_theme.gd",
+   "offset": 59455350,
+   "size": 8728
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/campus_theme.gd.uid",
+   "offset": 59464078,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/course_card.gd",
+   "offset": 59464098,
+   "size": 18678
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/course_card.gd.uid",
+   "offset": 59482776,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/course_detail.gd",
+   "offset": 59482795,
+   "size": 40802
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/course_detail.gd.uid",
+   "offset": 59523597,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/cover_art.gd",
+   "offset": 59523617,
+   "size": 7158
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/cover_art.gd.uid",
+   "offset": 59530775,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/lessons_panel.gd",
+   "offset": 59530795,
+   "size": 24322
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/lessons_panel.gd.uid",
+   "offset": 59555117,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/login_panel.gd",
+   "offset": 59555137,
+   "size": 9239
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/login_panel.gd.uid",
+   "offset": 59564376,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/login_view.gd",
+   "offset": 59564396,
+   "size": 8343
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/login_view.gd.uid",
+   "offset": 59572739,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/storefront_view.gd",
+   "offset": 59572759,
+   "size": 22295
+  },
+  {
+   "path": "addons/godot_tours/campus/campus_ui/storefront_view.gd.uid",
+   "offset": 59595054,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/campus/catalog.gd",
+   "offset": 59595073,
+   "size": 47400
+  },
+  {
+   "path": "addons/godot_tours/campus/catalog.gd.uid",
+   "offset": 59642473,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/client_updater.gd",
+   "offset": 59642493,
+   "size": 18321
+  },
+  {
+   "path": "addons/godot_tours/campus/client_updater.gd.uid",
+   "offset": 59660814,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/content_pack.gd",
+   "offset": 59660834,
+   "size": 7872
+  },
+  {
+   "path": "addons/godot_tours/campus/content_pack.gd.uid",
+   "offset": 59668706,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/campus/device.gd",
+   "offset": 59668725,
+   "size": 2872
+  },
+  {
+   "path": "addons/godot_tours/campus/device.gd.uid",
+   "offset": 59671597,
+   "size": 18
+  },
+  {
+   "path": "addons/godot_tours/campus/jwt.gd",
+   "offset": 59671615,
+   "size": 2059
+  },
+  {
+   "path": "addons/godot_tours/campus/jwt.gd.uid",
+   "offset": 59673674,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/keys/campus_public.pem",
+   "offset": 59673694,
+   "size": 460
+  },
+  {
+   "path": "addons/godot_tours/campus/lesson_installer.gd",
+   "offset": 59674154,
+   "size": 78072
+  },
+  {
+   "path": "addons/godot_tours/campus/lesson_installer.gd.uid",
+   "offset": 59752226,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/campus/license.gd",
+   "offset": 59752245,
+   "size": 4296
+  },
+  {
+   "path": "addons/godot_tours/campus/license.gd.uid",
+   "offset": 59756541,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/local_owner.gd",
+   "offset": 59756561,
+   "size": 4303
+  },
+  {
+   "path": "addons/godot_tours/campus/local_owner.gd.uid",
+   "offset": 59760864,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/locale/id.po",
+   "offset": 59760884,
+   "size": 46977
+  },
+  {
+   "path": "addons/godot_tours/campus/locale/locale.pot",
+   "offset": 59807861,
+   "size": 36803
+  },
+  {
+   "path": "addons/godot_tours/campus/locale/README.md",
+   "offset": 59844664,
+   "size": 1082
+  },
+  {
+   "path": "addons/godot_tours/campus/MANIFEST.md",
+   "offset": 59845746,
+   "size": 3602
+  },
+  {
+   "path": "addons/godot_tours/campus/mentor_skin.gd",
+   "offset": 59849348,
+   "size": 8709
+  },
+  {
+   "path": "addons/godot_tours/campus/mentor_skin.gd.uid",
+   "offset": 59858057,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/progress_sync.gd",
+   "offset": 59858077,
+   "size": 19960
+  },
+  {
+   "path": "addons/godot_tours/campus/progress_sync.gd.uid",
+   "offset": 59878037,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/campus/README.md",
+   "offset": 59878057,
+   "size": 5857
+  },
+  {
+   "path": "addons/godot_tours/campus/session_store.gd",
+   "offset": 59883914,
+   "size": 2980
+  },
+  {
+   "path": "addons/godot_tours/campus/session_store.gd.uid",
+   "offset": 59886894,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/convert.gd",
+   "offset": 59886914,
+   "size": 4307
+  },
+  {
+   "path": "addons/godot_tours/convert.gd.uid",
+   "offset": 59891221,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/debugger/debugger.gd",
+   "offset": 59891241,
+   "size": 5619
+  },
+  {
+   "path": "addons/godot_tours/debugger/debugger.gd.uid",
+   "offset": 59896860,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/debugger/debugger.tscn",
+   "offset": 59896880,
+   "size": 4341
+  },
+  {
+   "path": "addons/godot_tours/debugger/resource_invalidator.gd",
+   "offset": 59901221,
+   "size": 1466
+  },
+  {
+   "path": "addons/godot_tours/debugger/resource_invalidator.gd.uid",
+   "offset": 59902687,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/editor/gdtour_button.gd",
+   "offset": 59902706,
+   "size": 213
+  },
+  {
+   "path": "addons/godot_tours/editor/gdtour_button.gd.uid",
+   "offset": 59902919,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/editor/gdtour_button.tscn",
+   "offset": 59902939,
+   "size": 385
+  },
+  {
+   "path": "addons/godot_tours/gdtour_metadata.gd",
+   "offset": 59903324,
+   "size": 14311
+  },
+  {
+   "path": "addons/godot_tours/gdtour_metadata.gd.uid",
+   "offset": 59917635,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/log.gd",
+   "offset": 59917655,
+   "size": 1592
+  },
+  {
+   "path": "addons/godot_tours/log.gd.uid",
+   "offset": 59919247,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/mouse/mouse.gd",
+   "offset": 59919267,
+   "size": 4944
+  },
+  {
+   "path": "addons/godot_tours/mouse/mouse.gd.uid",
+   "offset": 59924211,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/mouse/mouse.tscn",
+   "offset": 59924231,
+   "size": 1059
+  },
+  {
+   "path": "addons/godot_tours/mouse/mouse_texture.png",
+   "offset": 59925290,
+   "size": 5839
+  },
+  {
+   "path": "addons/godot_tours/mouse/mouse_texture.png.import",
+   "offset": 59931129,
+   "size": 968
+  },
+  {
+   "path": "addons/godot_tours/overlays/dimmer/dimmer.gd",
+   "offset": 59932097,
+   "size": 2901
+  },
+  {
+   "path": "addons/godot_tours/overlays/dimmer/dimmer.gd.uid",
+   "offset": 59934998,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/overlays/dimmer/dimmer.tscn",
+   "offset": 59935017,
+   "size": 1052
+  },
+  {
+   "path": "addons/godot_tours/overlays/dimmer/dimmer_mask.tscn",
+   "offset": 59936069,
+   "size": 127
+  },
+  {
+   "path": "addons/godot_tours/overlays/flash_area/flash_area.gd",
+   "offset": 59936196,
+   "size": 1058
+  },
+  {
+   "path": "addons/godot_tours/overlays/flash_area/flash_area.gd.uid",
+   "offset": 59937254,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/overlays/flash_area/flash_area.tscn",
+   "offset": 59937273,
+   "size": 1770
+  },
+  {
+   "path": "addons/godot_tours/overlays/highlight/highlight.gd",
+   "offset": 59939043,
+   "size": 3667
+  },
+  {
+   "path": "addons/godot_tours/overlays/highlight/highlight.gd.uid",
+   "offset": 59942710,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/overlays/highlight/highlight.tres",
+   "offset": 59942730,
+   "size": 480
+  },
+  {
+   "path": "addons/godot_tours/overlays/highlight/highlight.tscn",
+   "offset": 59943210,
+   "size": 965
+  },
+  {
+   "path": "addons/godot_tours/overlays/highlight/highlight_soft.tres",
+   "offset": 59944175,
+   "size": 1108
+  },
+  {
+   "path": "addons/godot_tours/overlays/overlays.gd",
+   "offset": 59945283,
+   "size": 28028
+  },
+  {
+   "path": "addons/godot_tours/overlays/overlays.gd.uid",
+   "offset": 59973311,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/plugin.cfg",
+   "offset": 59973331,
+   "size": 177
+  },
+  {
+   "path": "addons/godot_tours/plugin.gd",
+   "offset": 59973508,
+   "size": 187490
+  },
+  {
+   "path": "addons/godot_tours/plugin.gd.uid",
+   "offset": 60160998,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/progress.gd",
+   "offset": 60161018,
+   "size": 12606
+  },
+  {
+   "path": "addons/godot_tours/progress.gd.uid",
+   "offset": 60173624,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/promo/assets/chevron_right.svg",
+   "offset": 60173644,
+   "size": 218
+  },
+  {
+   "path": "addons/godot_tours/promo/assets/chevron_right.svg.import",
+   "offset": 60173862,
+   "size": 1072
+  },
+  {
+   "path": "addons/godot_tours/promo/assets/course_ad_cover.png",
+   "offset": 60174934,
+   "size": 813555
+  },
+  {
+   "path": "addons/godot_tours/promo/assets/course_ad_cover.png.import",
+   "offset": 60988489,
+   "size": 980
+  },
+  {
+   "path": "addons/godot_tours/promo/assets/gdschool_logo.svg",
+   "offset": 60989469,
+   "size": 16453
+  },
+  {
+   "path": "addons/godot_tours/promo/assets/gdschool_logo.svg.import",
+   "offset": 61005922,
+   "size": 1072
+  },
+  {
+   "path": "addons/godot_tours/promo/assets/nathan.png",
+   "offset": 61006994,
+   "size": 103557
+  },
+  {
+   "path": "addons/godot_tours/promo/assets/nathan.png.import",
+   "offset": 61110551,
+   "size": 953
+  },
+  {
+   "path": "addons/godot_tours/promo/assets/speech_bubble_tail.svg",
+   "offset": 61111504,
+   "size": 156
+  },
+  {
+   "path": "addons/godot_tours/promo/assets/speech_bubble_tail.svg.import",
+   "offset": 61111660,
+   "size": 1086
+  },
+  {
+   "path": "addons/godot_tours/promo/content/course_box.gd",
+   "offset": 61112746,
+   "size": 1556
+  },
+  {
+   "path": "addons/godot_tours/promo/content/course_box.gd.uid",
+   "offset": 61114302,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/promo/content/course_box.tscn",
+   "offset": 61114322,
+   "size": 1201
+  },
+  {
+   "path": "addons/godot_tours/promo/content/course_button.gd",
+   "offset": 61115523,
+   "size": 1688
+  },
+  {
+   "path": "addons/godot_tours/promo/content/course_button.gd.uid",
+   "offset": 61117211,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/promo/content/quote_box.gd",
+   "offset": 61117231,
+   "size": 1796
+  },
+  {
+   "path": "addons/godot_tours/promo/content/quote_box.gd.uid",
+   "offset": 61119027,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/promo/content/quote_box.tscn",
+   "offset": 61119046,
+   "size": 2723
+  },
+  {
+   "path": "addons/godot_tours/promo/gdschool_promo.tscn",
+   "offset": 61121769,
+   "size": 3690
+  },
+  {
+   "path": "addons/godot_tours/shortcuts.gd",
+   "offset": 61125459,
+   "size": 482
+  },
+  {
+   "path": "addons/godot_tours/shortcuts.gd.uid",
+   "offset": 61125941,
+   "size": 19
+  },
+  {
+   "path": "addons/godot_tours/tour.gd",
+   "offset": 61125960,
+   "size": 237256
+  },
+  {
+   "path": "addons/godot_tours/tour.gd.uid",
+   "offset": 61363216,
+   "size": 20
+  },
+  {
+   "path": "addons/godot_tours/utils.gd",
+   "offset": 61363236,
+   "size": 13601
+  },
+  {
+   "path": "addons/godot_tours/utils.gd.uid",
+   "offset": 61376837,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/assets/sky_blue.png",
+   "offset": 61376857,
+   "size": 153
+  },
+  {
+   "path": "campus_game/campus_demo/assets/sky_blue.png.import",
+   "offset": 61377010,
+   "size": 959
+  },
+  {
+   "path": "campus_game/campus_demo/autoloads/global_resources.gd",
+   "offset": 61377969,
+   "size": 1314
+  },
+  {
+   "path": "campus_game/campus_demo/autoloads/global_resources.gd.uid",
+   "offset": 61379283,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/common/game_over_sky.png",
+   "offset": 61379303,
+   "size": 28726
+  },
+  {
+   "path": "campus_game/campus_demo/common/game_over_sky.png.import",
+   "offset": 61408029,
+   "size": 973
+  },
+  {
+   "path": "campus_game/campus_demo/common/hurt.wav",
+   "offset": 61409002,
+   "size": 89364
+  },
+  {
+   "path": "campus_game/campus_demo/common/hurt.wav.import",
+   "offset": 61498366,
+   "size": 501
+  },
+  {
+   "path": "campus_game/campus_demo/common/kill.wav",
+   "offset": 61498867,
+   "size": 30568
+  },
+  {
+   "path": "campus_game/campus_demo/common/kill.wav.import",
+   "offset": 61529435,
+   "size": 501
+  },
+  {
+   "path": "campus_game/campus_demo/common/laser.wav",
+   "offset": 61529936,
+   "size": 24150
+  },
+  {
+   "path": "campus_game/campus_demo/common/laser.wav.import",
+   "offset": 61554086,
+   "size": 504
+  },
+  {
+   "path": "campus_game/campus_demo/common/Montserrat-ExtraBold.ttf",
+   "offset": 61554590,
+   "size": 262108
+  },
+  {
+   "path": "campus_game/campus_demo/common/Montserrat-ExtraBold.ttf.import",
+   "offset": 61816698,
+   "size": 816
+  },
+  {
+   "path": "campus_game/campus_demo/common/particles/ice_particle_white.png",
+   "offset": 61817514,
+   "size": 478
+  },
+  {
+   "path": "campus_game/campus_demo/common/particles/ice_particle_white.png.import",
+   "offset": 61817992,
+   "size": 999
+  },
+  {
+   "path": "campus_game/campus_demo/common/particles/paricles_sparkle.tscn",
+   "offset": 61818991,
+   "size": 813
+  },
+  {
+   "path": "campus_game/campus_demo/common/particles/sparkle_2.png",
+   "offset": 61819804,
+   "size": 958
+  },
+  {
+   "path": "campus_game/campus_demo/common/particles/sparkle_2.png.import",
+   "offset": 61820762,
+   "size": 972
+  },
+  {
+   "path": "campus_game/campus_demo/common/powerup.wav",
+   "offset": 61821734,
+   "size": 18468
+  },
+  {
+   "path": "campus_game/campus_demo/common/powerup.wav.import",
+   "offset": 61840202,
+   "size": 509
+  },
+  {
+   "path": "campus_game/campus_demo/common/shadow.tscn",
+   "offset": 61840711,
+   "size": 358
+  },
+  {
+   "path": "campus_game/campus_demo/common/shadow_circle.png",
+   "offset": 61841069,
+   "size": 1327
+  },
+  {
+   "path": "campus_game/campus_demo/common/shadow_circle.png.import",
+   "offset": 61842396,
+   "size": 974
+  },
+  {
+   "path": "campus_game/campus_demo/common/title_font.tres",
+   "offset": 61843370,
+   "size": 262
+  },
+  {
+   "path": "campus_game/campus_demo/completed_project.tscn",
+   "offset": 61843632,
+   "size": 5798
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/base_enemy_ai.gd",
+   "offset": 61849430,
+   "size": 2480
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/base_enemy_ai.gd.uid",
+   "offset": 61851910,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/haunted_shield_ai.tscn",
+   "offset": 61851930,
+   "size": 2284
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/haunted_sword_ai.tscn",
+   "offset": 61854214,
+   "size": 2448
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/shield/haunted_shield_ai.gd",
+   "offset": 61856662,
+   "size": 2130
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/shield/haunted_shield_ai.gd.uid",
+   "offset": 61858792,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/shield/shield_active.png",
+   "offset": 61858812,
+   "size": 6696
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/shield/shield_active.png.import",
+   "offset": 61865508,
+   "size": 981
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/shield/shield_inactive.png",
+   "offset": 61866489,
+   "size": 7289
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/shield/shield_inactive.png.import",
+   "offset": 61873778,
+   "size": 988
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/sword/haunted_sword_ai.gd",
+   "offset": 61874766,
+   "size": 2960
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/sword/haunted_sword_ai.gd.uid",
+   "offset": 61877726,
+   "size": 19
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/sword/sword_active.png",
+   "offset": 61877745,
+   "size": 5929
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/sword/sword_active.png.import",
+   "offset": 61883674,
+   "size": 978
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/sword/sword_inactive.png",
+   "offset": 61884652,
+   "size": 4164
+  },
+  {
+   "path": "campus_game/campus_demo/enemies/sword/sword_inactive.png.import",
+   "offset": 61888816,
+   "size": 983
+  },
+  {
+   "path": "campus_game/campus_demo/game.gd",
+   "offset": 61889799,
+   "size": 516
+  },
+  {
+   "path": "campus_game/campus_demo/game.gd.uid",
+   "offset": 61890315,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/game_over.gd",
+   "offset": 61890335,
+   "size": 332
+  },
+  {
+   "path": "campus_game/campus_demo/game_over.gd.uid",
+   "offset": 61890667,
+   "size": 19
+  },
+  {
+   "path": "campus_game/campus_demo/game_over.tscn",
+   "offset": 61890686,
+   "size": 2540
+  },
+  {
+   "path": "campus_game/campus_demo/interface/bars/bar_bg_ninepatch.png",
+   "offset": 61893226,
+   "size": 749
+  },
+  {
+   "path": "campus_game/campus_demo/interface/bars/bar_bg_ninepatch.png.import",
+   "offset": 61893975,
+   "size": 991
+  },
+  {
+   "path": "campus_game/campus_demo/interface/bars/health_point.png",
+   "offset": 61894966,
+   "size": 516
+  },
+  {
+   "path": "campus_game/campus_demo/interface/bars/health_point.png.import",
+   "offset": 61895482,
+   "size": 978
+  },
+  {
+   "path": "campus_game/campus_demo/interface/bars/health_point_bg.png",
+   "offset": 61896460,
+   "size": 497
+  },
+  {
+   "path": "campus_game/campus_demo/interface/bars/health_point_bg.png.import",
+   "offset": 61896957,
+   "size": 987
+  },
+  {
+   "path": "campus_game/campus_demo/interface/bars/ui_health_bar.gd",
+   "offset": 61897944,
+   "size": 667
+  },
+  {
+   "path": "campus_game/campus_demo/interface/bars/ui_health_bar.gd.uid",
+   "offset": 61898611,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/interface/bars/ui_health_bar.tscn",
+   "offset": 61898631,
+   "size": 4320
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/background_blue_sky.gd",
+   "offset": 61902951,
+   "size": 163
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/background_blue_sky.gd.uid",
+   "offset": 61903114,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/background_blue_sky.gdshader",
+   "offset": 61903134,
+   "size": 295
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/background_blue_sky.gdshader.uid",
+   "offset": 61903429,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/background_blue_sky.tscn",
+   "offset": 61903449,
+   "size": 5700
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/cloud_a.png",
+   "offset": 61909149,
+   "size": 12017
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/cloud_a.png.import",
+   "offset": 61921166,
+   "size": 966
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/cloud_b.png",
+   "offset": 61922132,
+   "size": 5971
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/cloud_b.png.import",
+   "offset": 61928103,
+   "size": 967
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/cloud_c.png",
+   "offset": 61929070,
+   "size": 6018
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/cloud_c.png.import",
+   "offset": 61935088,
+   "size": 967
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/cloud_d.png",
+   "offset": 61936055,
+   "size": 12051
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/cloud_d.png.import",
+   "offset": 61948106,
+   "size": 966
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/far_island_1.png",
+   "offset": 61949072,
+   "size": 919
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/far_island_1.png.import",
+   "offset": 61949991,
+   "size": 982
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/far_island_2.png",
+   "offset": 61950973,
+   "size": 1474
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/far_island_2.png.import",
+   "offset": 61952447,
+   "size": 982
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/island_2.png",
+   "offset": 61953429,
+   "size": 4024
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/island_2.png.import",
+   "offset": 61957453,
+   "size": 970
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/island_3.png",
+   "offset": 61958423,
+   "size": 1782
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/island_3.png.import",
+   "offset": 61960205,
+   "size": 969
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/loop_clouds.gd",
+   "offset": 61961174,
+   "size": 160
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/loop_clouds.gd.uid",
+   "offset": 61961334,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/loop_clouds.tscn",
+   "offset": 61961354,
+   "size": 3307
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/wind_fx.png",
+   "offset": 61964661,
+   "size": 136
+  },
+  {
+   "path": "campus_game/campus_demo/levels/background/wind_fx.png.import",
+   "offset": 61964797,
+   "size": 966
+  },
+  {
+   "path": "campus_game/campus_demo/levels/base_room.gd",
+   "offset": 61965763,
+   "size": 907
+  },
+  {
+   "path": "campus_game/campus_demo/levels/base_room.gd.uid",
+   "offset": 61966670,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/levels/base_room.tscn",
+   "offset": 61966690,
+   "size": 4131
+  },
+  {
+   "path": "campus_game/campus_demo/levels/props/books_3.png",
+   "offset": 61970821,
+   "size": 3786
+  },
+  {
+   "path": "campus_game/campus_demo/levels/props/books_3.png.import",
+   "offset": 61974607,
+   "size": 962
+  },
+  {
+   "path": "campus_game/campus_demo/levels/props/rocks_sword.png",
+   "offset": 61975569,
+   "size": 11916
+  },
+  {
+   "path": "campus_game/campus_demo/levels/props/rocks_sword.png.import",
+   "offset": 61987485,
+   "size": 974
+  },
+  {
+   "path": "campus_game/campus_demo/levels/props/statue_hammer.png",
+   "offset": 61988459,
+   "size": 18319
+  },
+  {
+   "path": "campus_game/campus_demo/levels/props/statue_hammer.png.import",
+   "offset": 62006778,
+   "size": 980
+  },
+  {
+   "path": "campus_game/campus_demo/levels/props/statue_ruin.png",
+   "offset": 62007758,
+   "size": 17287
+  },
+  {
+   "path": "campus_game/campus_demo/levels/props/statue_ruin.png.import",
+   "offset": 62025045,
+   "size": 974
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/chests/chest.gd",
+   "offset": 62026019,
+   "size": 773
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/chests/chest.gd.uid",
+   "offset": 62026792,
+   "size": 19
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/chests/chest.tscn",
+   "offset": 62026811,
+   "size": 4209
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/chests/chest_bottom.png",
+   "offset": 62031020,
+   "size": 1926
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/chests/chest_bottom.png.import",
+   "offset": 62032946,
+   "size": 984
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/chests/chest_top.png",
+   "offset": 62033930,
+   "size": 2618
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/chests/chest_top.png.import",
+   "offset": 62036548,
+   "size": 975
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/dungeon.png",
+   "offset": 62037523,
+   "size": 333010
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/dungeon.png.import",
+   "offset": 62370533,
+   "size": 962
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/floating_dungeon_tileset.tres",
+   "offset": 62371495,
+   "size": 11929
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/invisible_wall.png",
+   "offset": 62383424,
+   "size": 1595
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/invisible_wall.png.import",
+   "offset": 62385019,
+   "size": 982
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/room_a.tscn",
+   "offset": 62386001,
+   "size": 4270
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/room_b.tscn",
+   "offset": 62390271,
+   "size": 5008
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/room_c.tscn",
+   "offset": 62395279,
+   "size": 4447
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/tileset_bridges.png",
+   "offset": 62399726,
+   "size": 10343
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/tileset_bridges.png.import",
+   "offset": 62410069,
+   "size": 985
+  },
+  {
+   "path": "campus_game/campus_demo/levels/rooms/tileset_invisible_walls.tres",
+   "offset": 62411054,
+   "size": 759
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/health_pickup.gd",
+   "offset": 62411813,
+   "size": 130
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/health_pickup.gd.uid",
+   "offset": 62411943,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/health_pickup.tscn",
+   "offset": 62411963,
+   "size": 636
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup.gd",
+   "offset": 62412599,
+   "size": 552
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup.gd.uid",
+   "offset": 62413151,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup.tscn",
+   "offset": 62413171,
+   "size": 6396
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_fire.png",
+   "offset": 62419567,
+   "size": 2986
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_fire.png.import",
+   "offset": 62422553,
+   "size": 969
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_fire.wav",
+   "offset": 62423522,
+   "size": 199176
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_fire.wav.import",
+   "offset": 62622698,
+   "size": 523
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_health.png",
+   "offset": 62623221,
+   "size": 3151
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_health.png.import",
+   "offset": 62626372,
+   "size": 975
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_health.wav",
+   "offset": 62627347,
+   "size": 462472
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_health.wav.import",
+   "offset": 63089819,
+   "size": 528
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_ice.png",
+   "offset": 63090347,
+   "size": 2761
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_ice.png.import",
+   "offset": 63093108,
+   "size": 966
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_ice.wav",
+   "offset": 63094074,
+   "size": 484148
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_ice.wav.import",
+   "offset": 63578222,
+   "size": 520
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_lightning.png",
+   "offset": 63578742,
+   "size": 2603
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_lightning.png.import",
+   "offset": 63581345,
+   "size": 984
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_lightning.wav",
+   "offset": 63582329,
+   "size": 281620
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/pickup_lightning.wav.import",
+   "offset": 63863949,
+   "size": 537
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/weapon_pickup.gd",
+   "offset": 63864486,
+   "size": 1755
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/weapon_pickup.gd.uid",
+   "offset": 63866241,
+   "size": 19
+  },
+  {
+   "path": "campus_game/campus_demo/pickups/weapon_pickup.tscn",
+   "offset": 63866260,
+   "size": 624
+  },
+  {
+   "path": "campus_game/campus_demo/player/camera_noise.tres",
+   "offset": 63866884,
+   "size": 85
+  },
+  {
+   "path": "campus_game/campus_demo/player/death_01.wav",
+   "offset": 63866969,
+   "size": 673996
+  },
+  {
+   "path": "campus_game/campus_demo/player/death_01.wav.import",
+   "offset": 64540965,
+   "size": 512
+  },
+  {
+   "path": "campus_game/campus_demo/player/death_02.wav",
+   "offset": 64541477,
+   "size": 745324
+  },
+  {
+   "path": "campus_game/campus_demo/player/death_02.wav.import",
+   "offset": 65286801,
+   "size": 513
+  },
+  {
+   "path": "campus_game/campus_demo/player/death_03.wav",
+   "offset": 65287314,
+   "size": 735544
+  },
+  {
+   "path": "campus_game/campus_demo/player/death_03.wav.import",
+   "offset": 66022858,
+   "size": 513
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_armor.gd",
+   "offset": 66023371,
+   "size": 988
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_armor.gd.uid",
+   "offset": 66024359,
+   "size": 19
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_bottom.png",
+   "offset": 66024378,
+   "size": 10141
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_bottom.png.import",
+   "offset": 66034519,
+   "size": 971
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_bottom_right.png",
+   "offset": 66035490,
+   "size": 9876
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_bottom_right.png.import",
+   "offset": 66045366,
+   "size": 989
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_right.png",
+   "offset": 66046355,
+   "size": 9078
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_right.png.import",
+   "offset": 66055433,
+   "size": 968
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_up.png",
+   "offset": 66056401,
+   "size": 9013
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_up.png.import",
+   "offset": 66065414,
+   "size": 959
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_up_right.png",
+   "offset": 66066373,
+   "size": 8424
+  },
+  {
+   "path": "campus_game/campus_demo/player/godot_up_right.png.import",
+   "offset": 66074797,
+   "size": 977
+  },
+  {
+   "path": "campus_game/campus_demo/player/hand_fire.png",
+   "offset": 66075774,
+   "size": 2543
+  },
+  {
+   "path": "campus_game/campus_demo/player/hand_fire.png.import",
+   "offset": 66078317,
+   "size": 962
+  },
+  {
+   "path": "campus_game/campus_demo/player/hand_ice.png",
+   "offset": 66079279,
+   "size": 2673
+  },
+  {
+   "path": "campus_game/campus_demo/player/hand_ice.png.import",
+   "offset": 66081952,
+   "size": 959
+  },
+  {
+   "path": "campus_game/campus_demo/player/hand_lightning.png",
+   "offset": 66082911,
+   "size": 2579
+  },
+  {
+   "path": "campus_game/campus_demo/player/hand_lightning.png.import",
+   "offset": 66085490,
+   "size": 977
+  },
+  {
+   "path": "campus_game/campus_demo/player/pain_01.wav",
+   "offset": 66086467,
+   "size": 271588
+  },
+  {
+   "path": "campus_game/campus_demo/player/pain_01.wav.import",
+   "offset": 66358055,
+   "size": 510
+  },
+  {
+   "path": "campus_game/campus_demo/player/pain_02.wav",
+   "offset": 66358565,
+   "size": 290980
+  },
+  {
+   "path": "campus_game/campus_demo/player/pain_02.wav.import",
+   "offset": 66649545,
+   "size": 510
+  },
+  {
+   "path": "campus_game/campus_demo/player/pain_03.wav",
+   "offset": 66650055,
+   "size": 252404
+  },
+  {
+   "path": "campus_game/campus_demo/player/pain_03.wav.import",
+   "offset": 66902459,
+   "size": 510
+  },
+  {
+   "path": "campus_game/campus_demo/player/pain_04.wav",
+   "offset": 66902969,
+   "size": 267260
+  },
+  {
+   "path": "campus_game/campus_demo/player/pain_04.wav.import",
+   "offset": 67170229,
+   "size": 509
+  },
+  {
+   "path": "campus_game/campus_demo/player/pain_05.wav",
+   "offset": 67170738,
+   "size": 265008
+  },
+  {
+   "path": "campus_game/campus_demo/player/pain_05.wav.import",
+   "offset": 67435746,
+   "size": 510
+  },
+  {
+   "path": "campus_game/campus_demo/player/player.gd",
+   "offset": 67436256,
+   "size": 1904
+  },
+  {
+   "path": "campus_game/campus_demo/player/player.gd.uid",
+   "offset": 67438160,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/player/player.tscn",
+   "offset": 67438180,
+   "size": 3010
+  },
+  {
+   "path": "campus_game/campus_demo/player/select_fire.wav",
+   "offset": 67441190,
+   "size": 81476
+  },
+  {
+   "path": "campus_game/campus_demo/player/select_fire.wav.import",
+   "offset": 67522666,
+   "size": 522
+  },
+  {
+   "path": "campus_game/campus_demo/player/select_ice.wav",
+   "offset": 67523188,
+   "size": 126232
+  },
+  {
+   "path": "campus_game/campus_demo/player/select_ice.wav.import",
+   "offset": 67649420,
+   "size": 519
+  },
+  {
+   "path": "campus_game/campus_demo/player/select_lightning.wav",
+   "offset": 67649939,
+   "size": 111784
+  },
+  {
+   "path": "campus_game/campus_demo/player/select_lightning.wav.import",
+   "offset": 67761723,
+   "size": 536
+  },
+  {
+   "path": "campus_game/campus_demo/player/shaking_camera2_d.gd",
+   "offset": 67762259,
+   "size": 1192
+  },
+  {
+   "path": "campus_game/campus_demo/player/shaking_camera2_d.gd.uid",
+   "offset": 67763451,
+   "size": 19
+  },
+  {
+   "path": "campus_game/campus_demo/player/weapon_pivot.gd",
+   "offset": 67763470,
+   "size": 2972
+  },
+  {
+   "path": "campus_game/campus_demo/player/weapon_pivot.gd.uid",
+   "offset": 67766442,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/bullet.gd",
+   "offset": 67766462,
+   "size": 1071
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/bullet.gd.uid",
+   "offset": 67767533,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/fire.png",
+   "offset": 67767553,
+   "size": 1106
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/fire.png.import",
+   "offset": 67768659,
+   "size": 955
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/fire_trail.png",
+   "offset": 67769614,
+   "size": 257
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/fire_trail.png.import",
+   "offset": 67769871,
+   "size": 973
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/fireball.gd",
+   "offset": 67770844,
+   "size": 629
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/fireball.gd.uid",
+   "offset": 67771473,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/fireball.tscn",
+   "offset": 67771493,
+   "size": 5322
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/hit_fire.wav",
+   "offset": 67776815,
+   "size": 96120
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/hit_fire.wav.import",
+   "offset": 67872935,
+   "size": 521
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/hit_ice.wav",
+   "offset": 67873456,
+   "size": 247952
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/hit_ice.wav.import",
+   "offset": 68121408,
+   "size": 517
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/hit_lightning.wav",
+   "offset": 68121925,
+   "size": 209428
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/hit_lightning.wav.import",
+   "offset": 68331353,
+   "size": 536
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/ice.png",
+   "offset": 68331889,
+   "size": 3375
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/ice.png.import",
+   "offset": 68335264,
+   "size": 952
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/ice_fist.gd",
+   "offset": 68336216,
+   "size": 459
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/ice_fist.gd.uid",
+   "offset": 68336675,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/ice_fist.tscn",
+   "offset": 68336695,
+   "size": 2076
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/lightning.png",
+   "offset": 68338771,
+   "size": 1986
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/lightning.png.import",
+   "offset": 68340757,
+   "size": 969
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/lightning_ray.gd",
+   "offset": 68341726,
+   "size": 465
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/lightning_ray.gd.uid",
+   "offset": 68342191,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/spells/bullets/lightning_ray.tscn",
+   "offset": 68342211,
+   "size": 2069
+  },
+  {
+   "path": "campus_game/campus_demo/spells/fire_spray.gd",
+   "offset": 68344280,
+   "size": 933
+  },
+  {
+   "path": "campus_game/campus_demo/spells/fire_spray.gd.uid",
+   "offset": 68345213,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/spells/fire_spray.tscn",
+   "offset": 68345233,
+   "size": 306
+  },
+  {
+   "path": "campus_game/campus_demo/spells/ice_punch.gd",
+   "offset": 68345539,
+   "size": 379
+  },
+  {
+   "path": "campus_game/campus_demo/spells/ice_punch.gd.uid",
+   "offset": 68345918,
+   "size": 19
+  },
+  {
+   "path": "campus_game/campus_demo/spells/ice_punch.tscn",
+   "offset": 68345937,
+   "size": 465
+  },
+  {
+   "path": "campus_game/campus_demo/spells/lightning_shot.gd",
+   "offset": 68346402,
+   "size": 422
+  },
+  {
+   "path": "campus_game/campus_demo/spells/lightning_shot.gd.uid",
+   "offset": 68346824,
+   "size": 19
+  },
+  {
+   "path": "campus_game/campus_demo/spells/lightning_shot.tscn",
+   "offset": 68346843,
+   "size": 493
+  },
+  {
+   "path": "campus_game/campus_demo/spells/rapid_fire.gd",
+   "offset": 68347336,
+   "size": 817
+  },
+  {
+   "path": "campus_game/campus_demo/spells/rapid_fire.gd.uid",
+   "offset": 68348153,
+   "size": 20
+  },
+  {
+   "path": "campus_game/campus_demo/spells/rapid_fire.tscn",
+   "offset": 68348173,
+   "size": 302
+  },
+  {
+   "path": "campus_game/campus_demo/spells/shoot_fire.wav",
+   "offset": 68348475,
+   "size": 72900
+  },
+  {
+   "path": "campus_game/campus_demo/spells/shoot_fire.wav.import",
+   "offset": 68421375,
+   "size": 518
+  },
+  {
+   "path": "campus_game/campus_demo/spells/shoot_ice.wav",
+   "offset": 68421893,
+   "size": 423604
+  },
+  {
+   "path": "campus_game/campus_demo/spells/shoot_ice.wav.import",
+   "offset": 68845497,
+   "size": 516
+  },
+  {
+   "path": "campus_game/campus_demo/spells/shoot_lightning.wav",
+   "offset": 68846013,
+   "size": 370908
+  },
+  {
+   "path": "campus_game/campus_demo/spells/shoot_lightning.wav.import",
+   "offset": 69216921,
+   "size": 534
+  },
+  {
+   "path": "campus_game/campus_demo/spells/spell.gd",
+   "offset": 69217455,
+   "size": 884
+  },
+  {
+   "path": "campus_game/campus_demo/spells/spell.gd.uid",
+   "offset": 69218339,
+   "size": 20
+  },
+  {
+   "path": "godotcampus.env.example.json",
+   "offset": 69218359,
+   "size": 1509
+  },
+  {
+   "path": "godotcampus.env.json",
+   "offset": 69219868,
+   "size": 211
+  },
+  {
+   "path": "icon.png",
+   "offset": 69220079,
+   "size": 3967
+  },
+  {
+   "path": "icon.png.import",
+   "offset": 69224046,
+   "size": 916
+  },
+  {
+   "path": "lessons/010_the_godot_editor__v17/docs/worksheet.md",
+   "offset": 69224962,
+   "size": 1841
+  },
+  {
+   "path": "lessons/010_the_godot_editor__v17/README.md",
+   "offset": 69226803,
+   "size": 1003
+  },
+  {
+   "path": "lessons/_campus/.gdignore",
+   "offset": 69227806,
+   "size": 0
+  },
+  {
+   "path": "lessons/_campus/_game_campus_demo/v2.json",
+   "offset": 69227806,
+   "size": 40139
+  },
+  {
+   "path": "lessons/_campus/getting_started_101_the_godot_editor/v17.json",
+   "offset": 69267945,
+   "size": 1522
+  },
+  {
+   "path": "lessons/_campus/installed.json",
+   "offset": 69269467,
+   "size": 898
+  },
+  {
+   "path": "LICENSE",
+   "offset": 69270365,
+   "size": 591
+  },
+  {
+   "path": "project.godot",
+   "offset": 69270956,
+   "size": 8647
+  },
+  {
+   "path": "README.md",
+   "offset": 69279603,
+   "size": 1259
+  },
+  {
+   "path": "tours/101_the_godot_editor__v17/101_the_godot_editor.gd",
+   "offset": 69280862,
+   "size": 25314
+  },
+  {
+   "path": "tours/101_the_godot_editor__v17/101_the_godot_editor.gd.uid",
+   "offset": 69306176,
+   "size": 20
+  },
+  {
+   "path": "tours/101_the_godot_editor__v17/locale/id.po",
+   "offset": 69306196,
+   "size": 32212
+  },
+  {
+   "path": "tours/101_the_godot_editor__v17/locale/ja.po",
+   "offset": 69338408,
+   "size": 31493
+  },
+  {
+   "path": "tours/101_the_godot_editor__v17/locale/locale.pot",
+   "offset": 69369901,
+   "size": 22843
+  },
+  {
+   "path": "tours/godot_tours.gd",
+   "offset": 69392744,
+   "size": 7330
+  },
+  {
+   "path": "tours/godot_tours.gd.uid",
+   "offset": 69400074,
+   "size": 20
+  },
+  {
+   "path": "tours/locale/locale.pot",
+   "offset": 69400094,
+   "size": 748
+  }
+ ]
+}
