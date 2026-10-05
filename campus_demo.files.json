@@ -1,8 +1,8 @@
 {
  "schema": 1,
  "project": "campus_demo",
- "bytes": 69400851,
- "build_id": "f9a4462abc879d9cc3feb7916746993373f40def97a6f843d65f2e16a141148e",
+ "bytes": 69400848,
+ "build_id": "a37648b595bae93d72d41609b429f48e8be510418ddec93aa3aef302ae9ab600",
  "files": [
   {
    "path": ".editorconfig",
@@ -4442,101 +4442,101 @@
   {
    "path": "godotcampus.env.json",
    "offset": 69219868,
-   "size": 220
+   "size": 217
   },
   {
    "path": "icon.png",
-   "offset": 69220088,
+   "offset": 69220085,
    "size": 3967
   },
   {
    "path": "icon.png.import",
-   "offset": 69224055,
+   "offset": 69224052,
    "size": 916
   },
   {
    "path": "lessons/010_the_godot_editor__v17/docs/worksheet.md",
-   "offset": 69224971,
+   "offset": 69224968,
    "size": 1841
   },
   {
    "path": "lessons/010_the_godot_editor__v17/README.md",
-   "offset": 69226812,
+   "offset": 69226809,
    "size": 1003
   },
   {
    "path": "lessons/_campus/.gdignore",
-   "offset": 69227815,
+   "offset": 69227812,
    "size": 0
   },
   {
    "path": "lessons/_campus/_game_campus_demo/v2.json",
-   "offset": 69227815,
+   "offset": 69227812,
    "size": 40139
   },
   {
    "path": "lessons/_campus/getting_started_101_the_godot_editor/v17.json",
-   "offset": 69267954,
+   "offset": 69267951,
    "size": 1522
   },
   {
    "path": "lessons/_campus/installed.json",
-   "offset": 69269476,
+   "offset": 69269473,
    "size": 898
   },
   {
    "path": "LICENSE",
-   "offset": 69270374,
+   "offset": 69270371,
    "size": 591
   },
   {
    "path": "project.godot",
-   "offset": 69270965,
+   "offset": 69270962,
    "size": 8647
   },
   {
    "path": "README.md",
-   "offset": 69279612,
+   "offset": 69279609,
    "size": 1259
   },
   {
    "path": "tours/101_the_godot_editor__v17/101_the_godot_editor.gd",
-   "offset": 69280871,
+   "offset": 69280868,
    "size": 25314
   },
   {
    "path": "tours/101_the_godot_editor__v17/101_the_godot_editor.gd.uid",
-   "offset": 69306185,
+   "offset": 69306182,
    "size": 20
   },
   {
    "path": "tours/101_the_godot_editor__v17/locale/id.po",
-   "offset": 69306205,
+   "offset": 69306202,
    "size": 32212
   },
   {
    "path": "tours/101_the_godot_editor__v17/locale/ja.po",
-   "offset": 69338417,
+   "offset": 69338414,
    "size": 31493
   },
   {
    "path": "tours/101_the_godot_editor__v17/locale/locale.pot",
-   "offset": 69369910,
+   "offset": 69369907,
    "size": 22843
   },
   {
    "path": "tours/godot_tours.gd",
-   "offset": 69392753,
+   "offset": 69392750,
    "size": 7330
   },
   {
    "path": "tours/godot_tours.gd.uid",
-   "offset": 69400083,
+   "offset": 69400080,
    "size": 20
   },
   {
    "path": "tours/locale/locale.pot",
-   "offset": 69400103,
+   "offset": 69400100,
    "size": 748
   }
  ]
