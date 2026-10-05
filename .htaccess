@@ -1,0 +1,26 @@
+# GodotCampus browser editor on Hostinger (LiteSpeed reads this file).
+#
+# The engine refuses to start unless the page is cross-origin isolated, which
+# needs these two headers on every response. GitHub Pages cannot send them (the
+# launcher falls back to Godot's service worker there); Hostinger can, so this
+# copy starts on the first visit without the one-time reload.
+<IfModule mod_headers.c>
+    Header always set Cross-Origin-Opener-Policy "same-origin"
+    Header always set Cross-Origin-Embedder-Policy "require-corp"
+    Header always set Cross-Origin-Resource-Policy "same-origin"
+
+    # REVALIDATE, NEVER ASSUME. campus_demo.bin keeps its name across builds
+    # while its contents change, and the launcher reads it at offsets taken
+    # from campus_demo.files.json. A week-old blob read with today's offsets is
+    # a corrupted project. `no-cache` still answers 304 when nothing changed, so
+    # a returning learner downloads nothing.
+    <FilesMatch "\.(html|json|bin|wasm|js)$">
+        Header set Cache-Control "no-cache"
+    </FilesMatch>
+</IfModule>
+
+AddType application/wasm .wasm
+AddType application/javascript .js
+AddType application/json .json
+
+DirectoryIndex index.html
